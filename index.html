@@ -1,0 +1,1906 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>公司项目群投资研究工作台</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts allow-same-origin allow-downloads" referrerpolicy="no-referrer" title="公司项目群投资研究工作台" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;公司项目群投资研究工作台&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --red: light-dark(rgb(186 38 35), rgb(250 66 62));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: var(--border-radius-lg, 12.5px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main id=&quot;company-investment-framework&quot; aria-label=&quot;公司持续运营与战略项目群投资研究工作台&quot;&gt;
+  &lt;style&gt;
+    #company-investment-framework {
+      --cif-bg: #f3f2ed;
+      --cif-surface: #fff;
+      --cif-surface-muted: #ecebe4;
+      --cif-ink: #192327;
+      --cif-muted: #5c686c;
+      --cif-line: #d6d7d0;
+      --cif-line-strong: #aeb4b1;
+      --cif-accent: #285d57;
+      --cif-accent-soft: #e2eeeb;
+      --cif-warn: #8b4c32;
+      --cif-warn-soft: #f4e8e1;
+      --cif-blue: #315c78;
+      --cif-blue-soft: #e5edf2;
+      --cif-focus: #08749a;
+      --cif-shadow: 0 16px 42px rgba(25, 35, 39, .075);
+      --cif-radius-lg: 22px;
+      --cif-radius-md: 14px;
+      --cif-reading: 78ch;
+      box-sizing: border-box;
+      min-width: 0;
+      margin: 0;
+      background: var(--cif-bg);
+      color: var(--cif-ink);
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    #company-investment-framework *,
+    #company-investment-framework *::before,
+    #company-investment-framework *::after { box-sizing: inherit; }
+    #company-investment-framework a { color: inherit; }
+    #company-investment-framework button,
+    #company-investment-framework summary { font: inherit; }
+    #company-investment-framework a:focus-visible,
+    #company-investment-framework button:focus-visible,
+    #company-investment-framework summary:focus-visible {
+      outline: 3px solid var(--cif-focus);
+      outline-offset: 3px;
+      border-radius: 7px;
+    }
+    #company-investment-framework h1,
+    #company-investment-framework h2,
+    #company-investment-framework h3,
+    #company-investment-framework h4 { margin-top: 0; color: var(--cif-ink); line-height: 1.25; text-wrap: balance; }
+    #company-investment-framework h1 { max-width: 18ch; margin-bottom: 18px; font-size: clamp(2.25rem, 6vw, 4.9rem); letter-spacing: -.045em; }
+    #company-investment-framework h2 { margin-bottom: 12px; font-size: clamp(1.65rem, 3vw, 2.45rem); letter-spacing: -.028em; }
+    #company-investment-framework h3 { margin-bottom: 10px; font-size: clamp(1.14rem, 2vw, 1.38rem); }
+    #company-investment-framework h4 { margin-bottom: 8px; font-size: .98rem; }
+    #company-investment-framework p { margin-top: 0; }
+    #company-investment-framework ul,
+    #company-investment-framework ol { padding-left: 1.25rem; }
+    #company-investment-framework li + li { margin-top: 5px; }
+
+    #company-investment-framework .cif-layout {
+      display: grid;
+      grid-template-columns: minmax(216px, 258px) minmax(0, 1fr);
+      gap: clamp(30px, 4.3vw, 72px);
+      width: min(1380px, 100%);
+      margin: 0 auto;
+      padding: clamp(20px, 4vw, 60px);
+    }
+    #company-investment-framework .cif-sidebar {
+      position: sticky;
+      top: 22px;
+      align-self: start;
+      max-height: calc(100vh - 44px);
+      overflow: auto;
+      padding: 20px;
+      border: 1px solid var(--cif-line);
+      border-radius: var(--cif-radius-lg);
+      background: color-mix(in srgb, var(--cif-surface) 94%, transparent);
+      box-shadow: var(--cif-shadow);
+    }
+    #company-investment-framework .cif-sidebar-title { margin: 0 0 5px; color: var(--cif-muted); font-size: .76rem; font-weight: 850; letter-spacing: .12em; }
+    #company-investment-framework .cif-sidebar-note { margin: 0 0 14px; color: var(--cif-muted); font-size: .8rem; line-height: 1.5; }
+    #company-investment-framework .cif-nav-label { margin: 17px 0 7px; color: var(--cif-muted); font-size: .7rem; font-weight: 850; letter-spacing: .1em; }
+    #company-investment-framework .cif-nav-list { display: grid; gap: 3px; margin: 0; padding: 0; list-style: none; }
+    #company-investment-framework .cif-nav-list li { margin: 0; }
+    #company-investment-framework .cif-nav-link { display: block; padding: 7px 10px; border-left: 3px solid transparent; border-radius: 0 8px 8px 0; color: var(--cif-muted); font-size: .87rem; line-height: 1.32; text-decoration: none; }
+    #company-investment-framework .cif-nav-link:hover,
+    #company-investment-framework .cif-nav-link[aria-current=&quot;location&quot;] { border-left-color: var(--cif-accent); background: var(--cif-accent-soft); color: var(--cif-ink); }
+    #company-investment-framework .cif-aux-nav .cif-nav-link { font-size: .79rem; }
+    #company-investment-framework .cif-print-button { width: 100%; margin-top: 17px; padding: 9px 12px; border: 1px solid var(--cif-line-strong); border-radius: 10px; background: var(--cif-surface); color: var(--cif-ink); cursor: pointer; }
+    #company-investment-framework .cif-print-button:hover { border-color: var(--cif-accent); background: var(--cif-accent-soft); }
+
+    #company-investment-framework .cif-content { min-width: 0; }
+    #company-investment-framework .cif-reading { width: min(var(--cif-reading), 100%); margin-inline: auto; }
+    #company-investment-framework .cif-hero { padding: clamp(30px, 6vw, 78px) 0 clamp(38px, 5vw, 62px); border-bottom: 1px solid var(--cif-line-strong); }
+    #company-investment-framework .cif-eyebrow { margin: 0 0 12px; color: var(--cif-accent); font-size: .76rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+    #company-investment-framework .cif-lead { max-width: 66ch; margin-bottom: 18px; color: var(--cif-muted); font-size: clamp(1.08rem, 2vw, 1.34rem); line-height: 1.7; }
+    #company-investment-framework .cif-boundary { display: flex; flex-wrap: wrap; gap: 7px 14px; margin: 0 0 28px; padding: 11px 14px; border: 1px solid var(--cif-line); border-radius: 13px; background: var(--cif-surface); color: var(--cif-muted); font-size: .86rem; }
+    #company-investment-framework .cif-boundary strong { color: var(--cif-ink); }
+    #company-investment-framework .cif-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; counter-reset: hero-step; }
+    #company-investment-framework .cif-steps li { min-width: 0; margin: 0; padding: 15px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); counter-increment: hero-step; }
+    #company-investment-framework .cif-steps li::before { display: block; margin-bottom: 7px; color: var(--cif-accent); font-size: .7rem; font-weight: 850; letter-spacing: .08em; content: &quot;0&quot; counter(hero-step); }
+    #company-investment-framework .cif-steps span { display: block; margin-top: 4px; color: var(--cif-muted); font-size: .83rem; line-height: 1.5; }
+
+    #company-investment-framework .cif-section { padding: clamp(45px, 7vw, 88px) 0; border-bottom: 1px solid var(--cif-line); scroll-margin-top: 24px; }
+    #company-investment-framework .cif-section-intro { max-width: 68ch; margin-bottom: 24px; color: var(--cif-muted); }
+    #company-investment-framework .cif-callout { margin: 20px 0; padding: 18px 20px; border-left: 4px solid var(--cif-accent); border-radius: 0 var(--cif-radius-md) var(--cif-radius-md) 0; background: var(--cif-accent-soft); }
+    #company-investment-framework .cif-callout p:last-child { margin-bottom: 0; }
+    #company-investment-framework .cif-formula { margin: 22px 0; padding: 20px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); text-align: center; }
+    #company-investment-framework .cif-formula strong { display: block; font-size: clamp(1.02rem, 2vw, 1.2rem); }
+    #company-investment-framework .cif-formula span { display: block; margin-top: 8px; color: var(--cif-muted); font-size: .88rem; }
+
+    #company-investment-framework .cif-causal-map { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin: 24px 0 0; padding: 0; list-style: none; }
+    #company-investment-framework .cif-causal-map li { position: relative; min-width: 0; margin: 0; padding: 14px 10px; border: 1px solid var(--cif-line); border-radius: 11px; background: var(--cif-surface); text-align: center; font-size: .8rem; font-weight: 760; }
+    #company-investment-framework .cif-causal-map li:not(:last-child)::after { position: absolute; top: 50%; right: -8px; z-index: 2; color: var(--cif-accent); font-weight: 900; content: &quot;›&quot;; transform: translate(50%, -50%); }
+
+    #company-investment-framework .cif-p0-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+    #company-investment-framework .cif-p0-card { min-width: 0; padding: 22px; border: 1px solid var(--cif-line); border-top: 4px solid var(--cif-warn); border-radius: var(--cif-radius-md); background: var(--cif-surface); box-shadow: 0 8px 22px rgba(25, 35, 39, .04); }
+    #company-investment-framework .cif-priority { display: inline-block; margin-bottom: 10px; padding: 3px 9px; border-radius: 999px; background: var(--cif-warn-soft); color: var(--cif-warn); font-size: .72rem; font-weight: 850; letter-spacing: .08em; }
+    #company-investment-framework .cif-card-label { margin: 15px 0 3px; color: var(--cif-muted); font-size: .72rem; font-weight: 850; letter-spacing: .08em; }
+    #company-investment-framework .cif-p0-card p:last-child { margin-bottom: 0; }
+
+    #company-investment-framework .cif-domain-list { display: grid; gap: 24px; }
+    #company-investment-framework .cif-domain { scroll-margin-top: 22px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-lg); background: var(--cif-surface); box-shadow: 0 9px 26px rgba(25, 35, 39, .035); overflow: hidden; }
+    #company-investment-framework .cif-domain-head { display: grid; grid-template-columns: minmax(120px, .34fr) minmax(0, 1fr); gap: 28px; padding: 26px 28px 20px; }
+    #company-investment-framework .cif-domain-number { margin: 0 0 7px; color: var(--cif-accent); font-size: .73rem; font-weight: 850; letter-spacing: .12em; }
+    #company-investment-framework .cif-domain-thesis { margin-bottom: 12px; font-size: 1.02rem; }
+    #company-investment-framework .cif-domain-example { margin-bottom: 0; padding-left: 15px; border-left: 3px solid var(--cif-accent); color: var(--cif-muted); font-size: .9rem; }
+    #company-investment-framework .cif-domain-questions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0 28px 20px; padding: 0; list-style: none; }
+    #company-investment-framework .cif-domain-questions li { margin: 0; padding: 12px 14px; border: 1px solid var(--cif-line); border-radius: 10px; background: var(--cif-surface-muted); font-size: .87rem; line-height: 1.5; }
+    #company-investment-framework .cif-domain &gt; details { border-top: 1px solid var(--cif-line); background: color-mix(in srgb, var(--cif-surface-muted) 48%, var(--cif-surface)); }
+    #company-investment-framework .cif-domain &gt; details summary { padding: 14px 28px; color: var(--cif-accent); font-weight: 800; cursor: pointer; }
+    #company-investment-framework .cif-domain &gt; details[open] summary { border-bottom: 1px solid var(--cif-line); }
+    #company-investment-framework .cif-domain-body { padding: 22px 28px 28px; }
+    #company-investment-framework .cif-domain-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    #company-investment-framework .cif-mini-card { min-width: 0; padding: 17px; border: 1px solid var(--cif-line); border-radius: 11px; background: var(--cif-surface); }
+    #company-investment-framework .cif-mini-card p,
+    #company-investment-framework .cif-mini-card ul { margin-bottom: 0; color: var(--cif-muted); font-size: .87rem; }
+    #company-investment-framework .cif-mini-card ul { padding-left: 1.05rem; }
+    #company-investment-framework .cif-output { border-color: color-mix(in srgb, var(--cif-accent) 42%, var(--cif-line)); background: var(--cif-accent-soft); }
+    #company-investment-framework .cif-red { border-color: color-mix(in srgb, var(--cif-warn) 42%, var(--cif-line)); background: var(--cif-warn-soft); }
+
+    #company-investment-framework .cif-matrix-wrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); }
+    #company-investment-framework .cif-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: .85rem; }
+    #company-investment-framework .cif-table th,
+    #company-investment-framework .cif-table td { padding: 12px 14px; border-bottom: 1px solid var(--cif-line); text-align: left; vertical-align: top; }
+    #company-investment-framework .cif-table th { background: var(--cif-surface-muted); color: var(--cif-muted); font-size: .75rem; letter-spacing: .04em; }
+    #company-investment-framework .cif-table tr:last-child td { border-bottom: 0; }
+
+    #company-investment-framework .cif-tools-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: 16px; align-items: start; }
+    #company-investment-framework .cif-card { min-width: 0; padding: 22px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); }
+    #company-investment-framework .cif-update-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; counter-reset: update-step; }
+    #company-investment-framework .cif-update-list li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; margin: 0; counter-increment: update-step; }
+    #company-investment-framework .cif-update-list li::before { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--cif-accent-soft); color: var(--cif-accent); font-size: .72rem; font-weight: 850; content: counter(update-step); }
+    #company-investment-framework .cif-details-stack { display: grid; gap: 9px; }
+    #company-investment-framework .cif-details-stack details { padding: 0 16px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); }
+    #company-investment-framework .cif-details-stack summary { padding: 13px 0; font-weight: 780; cursor: pointer; }
+    #company-investment-framework .cif-details-stack details[open] summary { border-bottom: 1px solid var(--cif-line); }
+    #company-investment-framework .cif-detail-body { padding: 13px 0 16px; color: var(--cif-muted); font-size: .88rem; }
+    #company-investment-framework .cif-detail-body p:last-child,
+    #company-investment-framework .cif-detail-body ul:last-child { margin-bottom: 0; }
+    #company-investment-framework .cif-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+    #company-investment-framework .cif-tags li { margin: 0; padding: 4px 9px; border: 1px solid var(--cif-line); border-radius: 999px; background: var(--cif-surface-muted); color: var(--cif-muted); font-size: .78rem; }
+
+    #company-investment-framework .cif-strips { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; margin: 20px 0; padding: 0; list-style: none; }
+    #company-investment-framework .cif-strips li { min-width: 0; margin: 0; padding: 15px 10px; border: 1px solid var(--cif-line); border-radius: 10px; background: var(--cif-surface); text-align: center; font-size: .82rem; font-weight: 760; }
+    #company-investment-framework .cif-ladder { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 7px; margin: 20px 0; }
+    #company-investment-framework .cif-ladder article { min-width: 0; padding: 14px 10px; border: 1px solid var(--cif-line); border-top: 4px solid var(--cif-accent); border-radius: 10px; background: var(--cif-surface); }
+    #company-investment-framework .cif-ladder strong { display: block; margin-bottom: 5px; }
+    #company-investment-framework .cif-ladder span { display: block; color: var(--cif-muted); font-size: .77rem; line-height: 1.45; }
+    #company-investment-framework .cif-gates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; margin: 20px 0; padding: 0; list-style: none; counter-reset: gate; }
+    #company-investment-framework .cif-gates li { min-width: 0; margin: 0; padding: 17px; border: 1px solid var(--cif-line); border-radius: var(--cif-radius-md); background: var(--cif-surface); counter-increment: gate; }
+    #company-investment-framework .cif-gates li::before { display: block; color: var(--cif-accent); font-size: .7rem; font-weight: 850; letter-spacing: .1em; content: &quot;检查 0&quot; counter(gate); }
+    #company-investment-framework .cif-gates strong { display: block; margin: 5px 0; }
+    #company-investment-framework .cif-gates span { display: block; color: var(--cif-muted); font-size: .82rem; line-height: 1.48; }
+    #company-investment-framework .cif-decision-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin: 18px 0; }
+    #company-investment-framework .cif-decision-row span { padding: 12px 8px; border: 1px solid var(--cif-line); border-radius: 999px; background: var(--cif-surface); text-align: center; font-size: .8rem; font-weight: 760; }
+    #company-investment-framework .cif-footer { padding: 34px 0 12px; color: var(--cif-muted); font-size: .82rem; }
+    #company-investment-framework .cif-footer p { margin-bottom: 6px; }
+
+    @media (prefers-color-scheme: dark) {
+      #company-investment-framework {
+        --cif-bg: #13191b; --cif-surface: #1b2325; --cif-surface-muted: #222b2d; --cif-ink: #edf2f0; --cif-muted: #b7c0c0;
+        --cif-line: #384345; --cif-line-strong: #596466; --cif-accent: #91c9c1; --cif-accent-soft: #203c39;
+        --cif-warn: #e3a088; --cif-warn-soft: #472e28; --cif-blue: #9bc4dd; --cif-blue-soft: #213543; --cif-focus: #82d9f2;
+        --cif-shadow: 0 16px 42px rgba(0, 0, 0, .25);
+      }
+    }
+    @media (max-width: 1060px) {
+      #company-investment-framework .cif-layout { grid-template-columns: minmax(190px, 220px) minmax(0, 1fr); gap: 28px; padding-inline: 28px; }
+      #company-investment-framework .cif-steps,
+      #company-investment-framework .cif-causal-map { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      #company-investment-framework .cif-causal-map li::after { display: none; }
+      #company-investment-framework .cif-ladder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 860px) {
+      #company-investment-framework .cif-layout { display: block; padding: 20px; }
+      #company-investment-framework .cif-sidebar { position: static; max-height: none; margin-bottom: 24px; padding: 16px; overflow: visible; }
+      #company-investment-framework .cif-sidebar nav:first-of-type .cif-nav-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 9px; }
+      #company-investment-framework .cif-nav-link { border: 1px solid var(--cif-line); border-radius: 8px; }
+      #company-investment-framework .cif-nav-link:hover,
+      #company-investment-framework .cif-nav-link[aria-current=&quot;location&quot;] { border-color: var(--cif-accent); }
+      #company-investment-framework .cif-aux-nav,
+      #company-investment-framework .cif-nav-label { display: none; }
+      #company-investment-framework .cif-print-button { width: auto; }
+    }
+    @media (max-width: 680px) {
+      #company-investment-framework { font-size: 15px; }
+      #company-investment-framework .cif-layout { padding: 14px; }
+      #company-investment-framework .cif-p0-grid,
+      #company-investment-framework .cif-tools-grid,
+      #company-investment-framework .cif-domain-grid,
+      #company-investment-framework .cif-domain-questions { grid-template-columns: minmax(0, 1fr); }
+      #company-investment-framework .cif-steps,
+      #company-investment-framework .cif-causal-map,
+      #company-investment-framework .cif-gates { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #company-investment-framework .cif-domain-head { grid-template-columns: minmax(0, 1fr); gap: 7px; padding: 22px 20px 17px; }
+      #company-investment-framework .cif-domain-questions { margin-inline: 20px; }
+      #company-investment-framework .cif-domain &gt; details summary { padding-inline: 20px; }
+      #company-investment-framework .cif-domain-body { padding: 19px 20px 22px; }
+      #company-investment-framework .cif-strips,
+      #company-investment-framework .cif-ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #company-investment-framework .cif-decision-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 430px) {
+      #company-investment-framework .cif-layout { padding: 10px; }
+      #company-investment-framework .cif-sidebar { padding: 12px; border-radius: 14px; }
+      #company-investment-framework .cif-steps,
+      #company-investment-framework .cif-causal-map,
+      #company-investment-framework .cif-gates,
+      #company-investment-framework .cif-strips,
+      #company-investment-framework .cif-ladder,
+      #company-investment-framework .cif-decision-row { grid-template-columns: minmax(0, 1fr); }
+      #company-investment-framework .cif-p0-card,
+      #company-investment-framework .cif-card { padding: 18px; }
+    }
+    @media (max-width: 330px) {
+      #company-investment-framework .cif-sidebar nav:first-of-type .cif-nav-list { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (prefers-reduced-motion: no-preference) { #company-investment-framework { scroll-behavior: smooth; } }
+    @media print {
+      #company-investment-framework { --cif-bg:#fff; --cif-surface:#fff; --cif-surface-muted:#fff; --cif-ink:#000; --cif-muted:#333; --cif-line:#bbb; --cif-line-strong:#777; --cif-accent:#000; --cif-accent-soft:#fff; --cif-warn:#000; --cif-warn-soft:#fff; background:#fff; color:#000; font-size:10pt; }
+      #company-investment-framework .cif-layout { display:block; width:100%; padding:0; }
+      #company-investment-framework .cif-sidebar { display:none !important; }
+      #company-investment-framework .cif-domain,
+      #company-investment-framework .cif-card,
+      #company-investment-framework .cif-p0-card { box-shadow:none; break-inside:avoid; }
+      #company-investment-framework details { display:block; }
+      #company-investment-framework details &gt; * { display:block; }
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;cif-layout&quot;&gt;
+    &lt;aside class=&quot;cif-sidebar&quot; aria-label=&quot;公司投资研究框架目录&quot;&gt;
+      &lt;p class=&quot;cif-sidebar-title&quot;&gt;十领域主目录&lt;/p&gt;
+      &lt;p class=&quot;cif-sidebar-note&quot;&gt;先用人话搞清楚公司，再按十个领域检查有没有漏掉重要问题。专业术语放在展开内容里。&lt;/p&gt;
+      &lt;nav aria-label=&quot;十个项目管理领域&quot;&gt;
+        &lt;ol class=&quot;cif-nav-list&quot;&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-integration&quot;&gt;1. 整合管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-scope&quot;&gt;2. 范围管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-schedule&quot;&gt;3. 进度管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-cost&quot;&gt;4. 成本管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-quality&quot;&gt;5. 质量管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-resource&quot;&gt;6. 资源管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-communication&quot;&gt;7. 沟通管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-risk&quot;&gt;8. 风险管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-procurement&quot;&gt;9. 采购管理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; data-domain-link href=&quot;#domain-stakeholder&quot;&gt;10. 相关方管理&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/nav&gt;
+      &lt;p class=&quot;cif-nav-label&quot;&gt;完整研究闭环&lt;/p&gt;
+      &lt;nav class=&quot;cif-aux-nav&quot; aria-label=&quot;页面辅助目录&quot;&gt;
+        &lt;ul class=&quot;cif-nav-list&quot;&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#overview&quot;&gt;先从哪里开始&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#p0-questions&quot;&gt;Tesla 四个关键问题&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#one-event&quot;&gt;同一事件怎样检查&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#operating-system&quot;&gt;新消息怎样更新判断&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#valuation-layer&quot;&gt;公司不错，股票贵不贵&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#execution-layer&quot;&gt;怎样避免一次错得太重&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#quick-screen&quot;&gt;30 分钟初筛&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;button class=&quot;cif-print-button&quot; type=&quot;button&quot; data-print&gt;打印 / 保存为电子文档（PDF）&lt;/button&gt;
+    &lt;/aside&gt;
+
+    &lt;div class=&quot;cif-content&quot;&gt;
+      &lt;div class=&quot;cif-reading&quot;&gt;
+        &lt;header class=&quot;cif-hero&quot; id=&quot;overview&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;用项目管理检查一家公司&lt;/p&gt;
+          &lt;h1&gt;公司投资研究工作台&lt;/h1&gt;
+          &lt;p class=&quot;cif-lead&quot;&gt;买股票之前，先搞清楚三件事：公司现在靠什么赚钱，它正在花钱做的新事情能不能成功，以及现在的股价是不是已经把成功算进去了。项目管理的十个领域，帮助我们从不同角度检查同一家公司，避免只听故事或只看股价。&lt;/p&gt;
+          &lt;p class=&quot;cif-boundary&quot;&gt;&lt;strong&gt;先把对象分开&lt;/strong&gt;&lt;span&gt;十个领域检查公司。&lt;/span&gt;&lt;span&gt;估值部分检查股价。&lt;/span&gt;&lt;span&gt;执行部分限制自己可能承受的损失。&lt;/span&gt;&lt;span&gt;公司做得好，不等于股票一定便宜。&lt;/span&gt;&lt;/p&gt;
+          &lt;ol class=&quot;cif-steps&quot; aria-label=&quot;四个使用步骤&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;先看公司怎样赚钱&lt;/strong&gt;&lt;span&gt;谁付钱、为什么付钱，公司扣掉成本后留下多少现金。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;再找最容易出错的地方&lt;/strong&gt;&lt;span&gt;哪件事失败后，原来的投资理由就站不住。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;用事实检查&lt;/strong&gt;&lt;span&gt;看财报、客户、产品、许可和竞争，不只听公司怎么说。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;最后看股价和风险&lt;/strong&gt;&lt;span&gt;即使公司不错，现在的价格是否仍值得承担风险。&lt;/span&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;div class=&quot;cif-callout&quot;&gt;
+            &lt;strong&gt;把公司正在做的事情分成三类：&lt;/strong&gt;
+            &lt;ol&gt;
+              &lt;li&gt;&lt;strong&gt;已经在重复赚钱的业务&lt;/strong&gt;，例如已经卖出去的汽车和售后服务。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;正在投入、等待证明的新项目&lt;/strong&gt;，例如还在扩大测试范围的 Robotaxi。&lt;/li&gt;
+              &lt;li&gt;&lt;strong&gt;先花少量资源试一试的想法&lt;/strong&gt;，成功了可以做大，失败了可以停止。金融里把这种选择叫“真实期权”。名字可以忘，但要问清下一步做什么、还要花多少钱、失败后是否真会停止。&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cif-formula&quot;&gt;
+            &lt;strong&gt;日常业务赚到钱 → 拿出一部分投入新项目 → 新项目通过客户和现实检验 → 最后才可能给股东带来更多现金&lt;/strong&gt;
+            &lt;span&gt;任何一段接不上，愿景都还没有变成投资结果。&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;项目管理类比的边界：&lt;/strong&gt;投资者看不到公司的完整计划，也不能指挥员工。公司不会像单个项目一样结束，股价也不等于项目完成度。我们只能用公开事实检查计划是否越来越可信，并决定自己是否继续承担风险。&lt;/div&gt;
+        &lt;/header&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;p0-questions&quot; aria-labelledby=&quot;p0-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;Tesla 贯穿示例&lt;/p&gt;
+          &lt;h2 id=&quot;p0-title&quot;&gt;研究 Tesla 时，最不能判断错的四件事&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;这些问题一旦判断错了，后面的增长、估值和买卖理由都可能跟着错。项目管理里可以把它们标成最高优先级 P0，但记住意思比记住名字重要。研究其他公司时，问题也必须跟着公司改变。&lt;/p&gt;
+          &lt;div class=&quot;cif-p0-grid&quot;&gt;
+            &lt;article class=&quot;cif-p0-card&quot;&gt;
+              &lt;span class=&quot;cif-priority&quot;&gt;最高优先级（P0）· 范围 / 质量 / 相关方&lt;/span&gt;
+              &lt;h3&gt;Robotaxi 能不能在没有人一直救场的情况下合法接客，而且每接一单不会亏钱？&lt;/h3&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;这件事为什么重要&lt;/p&gt;&lt;p&gt;Tesla 要靠 Robotaxi 赚大钱，至少要同时解决安全、许可、日常运营和成本问题。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;先看哪些事实&lt;/p&gt;&lt;p&gt;有没有正式许可证；有没有真正付钱的乘客；多久需要人工帮忙一次；事故率怎样；车辆、保险、清洁、充电和远程协助总共花多少钱。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;什么情况说明还没做成&lt;/p&gt;&lt;p&gt;车队一扩大就更容易出事、需要更多人工，或者接单越多亏得越多。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;下一步等什么&lt;/p&gt;&lt;p&gt;在更多地区重复同样的结果，而不是只在一个精心选择的区域演示。&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;cif-p0-card&quot;&gt;
+              &lt;span class=&quot;cif-priority&quot;&gt;最高优先级（P0）· 成本 / 资源 / 整合&lt;/span&gt;
+              &lt;h3&gt;汽车业务赚的钱，够不够维持自己并继续投资人工智能（AI）和机器人？&lt;/h3&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;这件事为什么重要&lt;/p&gt;&lt;p&gt;新项目多年内可能只花钱。如果汽车业务赚不到足够现金，公司就可能借更多债或增发股票，让旧股东所占比例变小。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;先看哪些事实&lt;/p&gt;&lt;p&gt;连续几个季度的收入、毛利、经营现金、建厂和设备投入、现金与债务、总股数。还要分清维持汽车业务和发展新项目各要花多少。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;什么情况说明问题变大&lt;/p&gt;&lt;p&gt;汽车业务长期消耗现金，新项目又没有通过下一次现实检验，公司只能不断融资补洞。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;下一步等什么&lt;/p&gt;&lt;p&gt;核心业务现金改善，或新项目拿出足以支持继续投入的客户、许可和成本证据。&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;cif-p0-card&quot;&gt;
+              &lt;span class=&quot;cif-priority&quot;&gt;最高优先级（P0）· 范围 / 质量 / 进度&lt;/span&gt;
+              &lt;h3&gt;Optimus 除了演示，能不能连续完成客户愿意付钱的工作？&lt;/h3&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;这件事为什么重要&lt;/p&gt;&lt;p&gt;一段成功视频只能说明“做过一次”。业务要成立，还要在真实环境里反复工作，并且比人工或其他机器更划算。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;先看哪些事实&lt;/p&gt;&lt;p&gt;机器人具体做什么任务、能连续运行多久、失败多少次、多久需要人帮忙、维护多频繁，以及有没有独立客户付费和再次购买。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;什么情况说明还没做成&lt;/p&gt;&lt;p&gt;只能在精心布置的环境中展示，换个工厂或任务就需要重新调试，节省的钱还不够支付设备和维护成本。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;下一步等什么&lt;/p&gt;&lt;p&gt;同一任务在不同环境中重复成功，再看到独立客户付费和续用。&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;cif-p0-card&quot;&gt;
+              &lt;span class=&quot;cif-priority&quot;&gt;最高优先级（P0）· 整合 / 资源 / 成本&lt;/span&gt;
+              &lt;h3&gt;汽车、储能、自动驾驶和机器人共享技术后，真的省了钱或时间吗？&lt;/h3&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;这件事为什么重要&lt;/p&gt;&lt;p&gt;“都使用 AI”只是共同标签。只有共享能力让产品更快做成、更便宜或更可靠，才真正增加价值。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;先看哪些事实&lt;/p&gt;&lt;p&gt;共享前后开发用了多久、每件产品成本怎样、合格率怎样，以及如果各自建立团队和设备本来要花多少钱。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;什么情况说明反而是拖累&lt;/p&gt;&lt;p&gt;几个项目争抢同一批工程师、芯片、工厂和现金，大家都排队，管理变复杂，交付时间反而后移。&lt;/p&gt;
+              &lt;p class=&quot;cif-card-label&quot;&gt;下一步等什么&lt;/p&gt;&lt;p&gt;至少一个可核对的结果：开发更快、成本更低、产品更可靠或少花了重复建设的钱。&lt;/p&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;ten-domains&quot; aria-labelledby=&quot;domains-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;项目管理十个领域 · 名称和顺序保持不变&lt;/p&gt;
+          &lt;h2 id=&quot;domains-title&quot;&gt;十个领域，就是从十个角度检查同一家公司&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;每个领域先用一句人话说明要搞清楚什么，再给简单例子、Tesla 例子、三个问题和一份最小记录。检查表放在理解之后，不再用一串专业名称代替解释。&lt;/p&gt;
+
+          &lt;div class=&quot;cif-domain-list&quot;&gt;
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-integration&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 01&lt;/p&gt;&lt;h3&gt;整合管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;公司同时做这么多事情，是互相帮助，还是互相抢钱、抢人、拖慢进度？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;一家店用赚到的钱开第二家店。如果新店一直亏钱，还不断从老店拿钱，就要问它何时能自己养活自己，失败后会不会关掉。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;哪些业务现在赚钱，哪些项目还在花钱？&lt;/li&gt;
+                &lt;li&gt;赚钱的业务能否负担新项目，还是需要借钱或增发股票？&lt;/li&gt;
+                &lt;li&gt;共用数据、芯片、工厂和员工后，真的更省钱、更快，还是反而排队？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;
+                  &lt;div class=&quot;cif-domain-grid&quot;&gt;
+                    &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;每项业务带来多少收入、利润和现金。&lt;/li&gt;&lt;li&gt;每个新项目已经花了多少，还要花多少。&lt;/li&gt;&lt;li&gt;共用资源后，时间、成本或质量有没有实际改善。&lt;/li&gt;&lt;li&gt;如果不投这个项目，钱还能用于偿债、回购或其他项目。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;Tesla 说汽车、储能、自动驾驶和机器人可以共享 AI 能力。共享本身不是好处。只有它让开发更快、成本更低或产品更可靠时，才算帮助；如果几个项目争抢同一批工程师和资金，就可能是拖累。&lt;/p&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;同一家公司、同一位创始人或同一个“AI”标签，不能证明项目之间真的互相帮助。只公布投入规模，也不能证明这些钱花得值得。&lt;/p&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新哪项业务在赚钱、哪项在花钱、还要投入多久，以及失败项目是否真的可以停止。先改公司判断，再决定是否需要改估值。&lt;/p&gt;&lt;/section&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;cif-matrix-wrap&quot; style=&quot;margin-top:14px&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+                    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;业务或项目&lt;/th&gt;&lt;th&gt;现在赚钱还是花钱&lt;/th&gt;&lt;th&gt;还要花多少&lt;/th&gt;&lt;th&gt;与谁共用资源&lt;/th&gt;&lt;th&gt;下一件能证明进展的事&lt;/th&gt;&lt;th&gt;失败后能否停止&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+                    &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;填写名称&lt;/td&gt;&lt;td&gt;赚钱 / 花钱 / 不知道&lt;/td&gt;&lt;td&gt;金额或“不知道”&lt;/td&gt;&lt;td&gt;人、钱、设备、数据&lt;/td&gt;&lt;td&gt;一个可观察结果&lt;/td&gt;&lt;td&gt;能 / 不能 / 不知道&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+                  &lt;/table&gt;&lt;/div&gt;
+                  &lt;p class=&quot;cif-detail-body&quot;&gt;&lt;strong&gt;专业说法：&lt;/strong&gt;把多项业务放在一起比较，常叫“业务组合管理”或“资本配置”；检查共享是否真的带来好处，常叫“协同审计”。&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-scope&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 02&lt;/p&gt;&lt;h3&gt;范围管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;公司到底答应做到哪一步？哪些已经做到，哪些还只是计划？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;“准备开新店”可能只代表看过铺位，也可能已经签约、装修、开门或开始赚钱。这四种状态不能混成一件事。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;产品给谁用，在什么场景用，解决什么具体问题？&lt;/li&gt;
+                &lt;li&gt;现在是做出样品、有人使用、有人付钱，还是已经能稳定赚钱？&lt;/li&gt;
+                &lt;li&gt;公司新增加的功能，是客户必须要的，还是让故事越讲越大？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;真实用户是谁，当前用什么替代。&lt;/li&gt;&lt;li&gt;公司已经交付了什么，明确没有交付什么。&lt;/li&gt;&lt;li&gt;客户是否持续使用、愿意付钱和再次购买。&lt;/li&gt;&lt;li&gt;新增功能是否改变客户结果，而不只是增加功能数量。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;需要司机一直注意的辅助驾驶、限定区域内试运营的无人车，以及可以在许多城市合法接客的服务，是三件不同的事。不能都叫“自动驾驶已经上线”。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;一次演示不等于稳定可用；意向订单不等于客户已经付款；建好产能不等于有人购买；换一个产品名称也不等于能力变强。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新目标用户、已经做到和没有做到的范围，并改写下一步怎样才算真的前进。不要因为换了名称，就把原来没完成的部分写成已完成。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-schedule&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 03&lt;/p&gt;&lt;h3&gt;进度管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;离真正能用、能卖、能赚钱还差哪几步？最慢的那一步是什么？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;开店要找铺位、办许可、装修、招人和备货。装修再快，许可证没下来也开不了门。最慢且绕不过去的步骤决定开业时间。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;必须按顺序完成哪些步骤，哪一步绕不过去？&lt;/li&gt;
+                &lt;li&gt;公司说“完成”时，是做完内部工作，还是客户和政府已经接受？&lt;/li&gt;
+                &lt;li&gt;日期后移是因为技术不行、人和钱不够、审批没过，还是原需求要重做？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;每一步开始前必须先完成什么。&lt;/li&gt;&lt;li&gt;谁来确认这一步真的完成。&lt;/li&gt;&lt;li&gt;公司原来说什么时候完成，现在预计什么时候。&lt;/li&gt;&lt;li&gt;延期具体卡在技术、人钱、供应商还是政府。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;Robotaxi 至少要经过安全验证、政府许可、运营准备、小范围接客和更多城市复制。任何前一步没完成，后面的收入时间都要重新估计。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;测试次数多、招到更多人、设备已经到厂，都只是做了活动，不等于产品已经被客户或政府接受。已经花了很久，也不能证明离完成很近。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新原日期、现在估计的日期、延期原因和下一步通过条件；如果时间变化会推迟收入或增加花费，也要同时修改估值中的时间和成本。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;专业说法：&lt;/strong&gt;绕不过去的最长步骤链叫“关键路径”；现在估计的完成时间常写作 EAC。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-cost&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 04&lt;/p&gt;&lt;h3&gt;成本管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;把事情做成还要花多少钱？业务越做越大时，是多赚钱还是多亏钱？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;面包卖得更多不一定更赚钱。原料、人工、外卖抽成和坏掉的库存如果涨得更快，销量越大反而亏得越多。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;维持现有业务、完成新项目和继续扩张，各要花多少钱？&lt;/li&gt;
+                &lt;li&gt;每多卖一件产品，公司实际多留下多少钱？&lt;/li&gt;
+                &lt;li&gt;现金够不够撑到下一次真正的产品、客户或许可证明？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看六组数字&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;收入：客户总共付了多少钱。&lt;/li&gt;&lt;li&gt;毛利：扣掉直接生产成本后剩多少。&lt;/li&gt;&lt;li&gt;经营现金：日常业务实际带来多少现金。&lt;/li&gt;&lt;li&gt;建厂和设备投入：为了未来能力花了多少。&lt;/li&gt;&lt;li&gt;现金与债务：公司手里有多少钱、欠多少钱。&lt;/li&gt;&lt;li&gt;总股数：增发后旧股东所占比例有没有变小。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;Robotaxi 的成本不只是造车。还包括车辆折旧、保险、清洁、维修、充电、远程人员、事故损失和车辆空闲时间。漏掉这些，就会把“有收入”错当成“能赚钱”。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;利润变好可能只是一次性收入或少花了必要的钱。累计已经投入多少也不够，还要问完成剩余工作需要多少。收入增长但现金越来越少，同样值得警惕。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;连续记录 8—12 个季度的收入、毛利、经营现金、建厂设备投入、净现金或净债务和总股数。新数字出现后，更新还要投入多少、钱能撑多久、每多卖一件留下多少，以及是否需要借钱或增发股票。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;专业说法：&lt;/strong&gt;经营现金减去建厂和设备等长期投入，可粗略帮助理解“自由现金流”；每多卖一件是多赚还是多亏，常叫“单位经济”。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-quality&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 05&lt;/p&gt;&lt;h3&gt;质量管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;产品是真的好用，还是只在一次演示里看起来很好？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;老板亲自做出一个好面包不难。难的是不同员工、不同门店每天都做得一样好，而且顾客愿意再来买。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;它具体替客户完成什么任务，成功和失败怎样计算？&lt;/li&gt;
+                &lt;li&gt;结果来自全部使用情况，还是只展示最好的一小部分？&lt;/li&gt;
+                &lt;li&gt;换客户、换地区、换时间后，还能稳定重复吗？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;
+                  &lt;div class=&quot;cif-ladder&quot; aria-label=&quot;产业成熟证据梯&quot;&gt;
+                    &lt;article&gt;&lt;strong&gt;做出一次&lt;/strong&gt;&lt;span&gt;说明这件事可能做到，但还不能证明稳定。&lt;/span&gt;&lt;/article&gt;
+                    &lt;article&gt;&lt;strong&gt;反复可用&lt;/strong&gt;&lt;span&gt;真实用户持续使用，失败率没有失控。&lt;/span&gt;&lt;/article&gt;
+                    &lt;article&gt;&lt;strong&gt;有人付钱&lt;/strong&gt;&lt;span&gt;客户认为它比现有办法更有价值。&lt;/span&gt;&lt;/article&gt;
+                    &lt;article&gt;&lt;strong&gt;多卖不多亏&lt;/strong&gt;&lt;span&gt;每增加一份业务，公司能留下更多钱。&lt;/span&gt;&lt;/article&gt;
+                    &lt;article&gt;&lt;strong&gt;赚回投入&lt;/strong&gt;&lt;span&gt;多年投入最终能给公司和股东带来回报。&lt;/span&gt;&lt;/article&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;cif-domain-grid&quot;&gt;
+                    &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;成功次数必须同时写总尝试次数。&lt;/li&gt;&lt;li&gt;记录在哪些环境、客户和时间里测试。&lt;/li&gt;&lt;li&gt;失败怎样发生，是否需要人工救场。&lt;/li&gt;&lt;li&gt;客户是否持续使用、付费和再次购买。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;自动驾驶要看每行驶一段距离发生多少事故、需要人接管多少次、服务中断多久；Optimus 要看连续运行、任务成功、维护次数和换环境后的结果。精选视频不能代替这些数字。&lt;/p&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;累计里程增加，不代表每公里更安全；一次成功不代表可以重复；技术指标达标，也不代表客户愿意使用、政府允许使用或成本能够承受。&lt;/p&gt;&lt;/section&gt;
+                    &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新任务、总尝试次数、成功次数、失败方式、测试环境和最低合格线，再判断原结论是明显变强、稍微变强、没变化、稍微变弱，还是已经不成立，不假装精确到小数点。&lt;/p&gt;&lt;/section&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-resource&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 06&lt;/p&gt;&lt;h3&gt;资源管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;现在真正卡住公司的是什么？多给人、钱或设备后，结果会不会真的改善？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;如果烤箱一次只能烤二十个面包，多招收银员不会增加产量。先找到最窄的地方，再决定补什么。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;最缺的是关键人才、数据、设备、现金、客户渠道还是管理时间？&lt;/li&gt;
+                &lt;li&gt;增加这项资源后，哪个结果应该在什么时候改善？&lt;/li&gt;
+                &lt;li&gt;解决一个堵点后，下一个堵点会出现在哪里？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;关键团队是否流失，补人要多久。&lt;/li&gt;&lt;li&gt;数据、芯片、设备、能源和场地是否够用。&lt;/li&gt;&lt;li&gt;现金能否撑到下一次产品或客户证明。&lt;/li&gt;&lt;li&gt;管理层同时推进多少项目，优先级是否反复变化。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;新增芯片、工程师或生产线，只有在训练更快、合格率提高、产量增加或成本下降时才算能力增强。如果结果不变，真正堵点可能是产品质量、客户需求或政府审批。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;投入更多不等于产出更多。项目共用资源也可能造成排队。现金能维持十二个月，不代表足够支撑到下一次真正的验证。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新当前堵点、多久能补上和补上后应改善的结果。如果增加资源后结果没有变化，就撤回“资源不足”的解释，改查质量、需求、审批或下一个堵点。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-communication&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 07&lt;/p&gt;&lt;h3&gt;沟通管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;这句话是谁说的？原始证据在哪里？它能证明什么，不能证明什么？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;老板说“新店很受欢迎”只是老板的说法。收银记录能证明卖了多少，重复到店记录才能帮助判断顾客是否真的喜欢。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;这是已经发生的事实、公司未来的计划，还是某个人的解释？&lt;/li&gt;
+                &lt;li&gt;同一个数字前后是否用了相同算法、范围和时间？&lt;/li&gt;
+                &lt;li&gt;十篇文章是否其实都在转述同一个来源？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：怎样判断可信度、避免重复计算、留下证据记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;四级可信度&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;A：&lt;/strong&gt;监管文件、审计财报、可以自己复核的原始数据。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;B：&lt;/strong&gt;公司原始披露、正式合同或独立的一手观察。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;C：&lt;/strong&gt;可靠媒体、专家解释或只覆盖部分情况的样本。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;D：&lt;/strong&gt;匿名传闻、剪辑片段、没有来源的转述和情绪。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;“启动”“部署”“生产”和“商业化”不是同一件事。看到这些词，要回到原始材料确认：到底有多少产品、谁在使用、是否付钱、使用范围多大。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;公司停止披露一个关键数字、悄悄改变算法，或许比新公布的漂亮数字更重要。同一条公司新闻被许多媒体转载，仍然只是一份来源。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;保存原话、来源、发布日期和事情真正发生的日期。先更新它属于事实、计划还是个人推断，再只修改它能够证明的那条判断；不能证明的部分保持“不知道”。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-risk&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 08&lt;/p&gt;&lt;h3&gt;风险管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;最坏的事情会怎样一步步发生？公司和投资者扛得住吗？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;不要只写“原料涨价风险”。要写成：小麦涨价 → 面粉变贵 → 面包提价 → 顾客减少 → 门店利润下降；长期合同和备用供应商能减轻多少影响。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;cif-formula&quot;&gt;&lt;strong&gt;不要只写“风险很大”。把坏事怎样发生、怎样影响公司、什么能减轻损失讲清楚。&lt;/strong&gt;&lt;span&gt;如果过程说不清，就还不知道应该观察什么，也不知道事情发生后该怎么办。&lt;/span&gt;&lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;公司现在最经不起什么打击？&lt;/li&gt;
+                &lt;li&gt;什么事件会把问题引爆，接下来怎样影响收入、成本、现金或许可？&lt;/li&gt;
+                &lt;li&gt;什么会让损失更大，什么又能减轻损失？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：用 Robotaxi 写出一条完整的坏事链&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子：坏事怎样开始&lt;/h4&gt;&lt;p&gt;Robotaxi 还依赖少数地区许可。一次严重事故可能让监管部门暂停服务。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;怎样影响公司&lt;/h4&gt;&lt;p&gt;暂停服务 → 无法扩大到更多城市 → 收入推迟 → 公司继续投入现金。如果其他城市一起收紧许可，影响会更大。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;什么能减轻损失&lt;/h4&gt;&lt;p&gt;只在小范围运营、保留安全员、准备事故处理方案，以及公司有足够现金继续改进，都能吸收一部分冲击。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;写下“监管风险很大”并没有完成分析；有保险也不等于没有损失。必须继续说明谁会采取什么行动、收入和现金怎样受影响，以及保险究竟承担哪一部分。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;盯事故率、人工接管次数、许可证范围和服务暂停记录。问题出现后，推迟收入预测、降低成功判断，必要时减少 Robotaxi 在估值中的分量。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+                &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;专业说法：&lt;/strong&gt;上面的“经不起什么、什么会引爆、怎样影响、什么让它更糟、什么减轻损失”，常分别叫脆弱点、触发事件、传导、放大因素和缓冲因素。名字可以忘，过程必须说清楚。&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-procurement&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 09&lt;/p&gt;&lt;h3&gt;采购管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;哪些关键东西必须靠别人供应？对方出问题时，公司有没有真正可用的替代办法？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;如果一种招牌面粉只有一家供应商，断货就会停卖。找到第二家还不够，新面粉做出的面包也要通过口味和稳定性测试。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;哪些零件、原料、设备、能源或服务一断就会停工？&lt;/li&gt;
+                &lt;li&gt;替代供应商是否真的通过质量和大批量交付测试？&lt;/li&gt;
+                &lt;li&gt;自己生产虽然更可控，会不会更贵、学得更慢或设备长期闲置？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看事实&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;关键投入由几家供应商提供，来自哪些地区。&lt;/li&gt;&lt;li&gt;下单到交货要多久，现有库存能撑多久。&lt;/li&gt;&lt;li&gt;合同是否锁定数量、价格、质量或优先供货。&lt;/li&gt;&lt;li&gt;切换供应商要重新测试多久、花多少钱。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;AI 芯片、电池、机器人执行器、能源和生产设备都可能影响成本、时间和质量。“有第二来源”不代表随时能换；还要确认它已经通过产品质量和大批量交付测试。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;为了保供应而签下高价或最低采购量，需求下降时会变成库存负担。所谓降本也可能来自质量下降、拖欠供应商或让供应商长期亏损。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新最重要的外部依赖、库存能撑多久、替代是否通过测试、切换时间和成本，再修改会被拖延的项目、产品毛利和公司需要的现金。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;cif-domain&quot; id=&quot;domain-stakeholder&quot;&gt;
+              &lt;div class=&quot;cif-domain-head&quot;&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-number&quot;&gt;领域 10&lt;/p&gt;&lt;h3&gt;相关方管理&lt;/h3&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;p class=&quot;cif-domain-thesis&quot;&gt;&lt;strong&gt;一句人话：&lt;/strong&gt;谁能让项目成功或失败？他们为什么会支持、反对或拖延？&lt;/p&gt;&lt;p class=&quot;cif-domain-example&quot;&gt;&lt;strong&gt;面包店例子：&lt;/strong&gt;开新店不只取决于面包好吃。房东要愿意出租，政府要批准，员工要愿意留下，顾客还要持续来买。&lt;/p&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul class=&quot;cif-domain-questions&quot;&gt;
+                &lt;li&gt;谁付钱、谁使用、谁批准、谁承担出问题后的损失？&lt;/li&gt;
+                &lt;li&gt;每个人最低要看到什么，才愿意继续配合？&lt;/li&gt;
+                &lt;li&gt;竞争者、客户和政府看到公司行动后，会怎样反应？&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;details&gt;
+                &lt;summary&gt;展开：看什么事实、哪里容易误判、怎样留下记录&lt;/summary&gt;
+                &lt;div class=&quot;cif-domain-body&quot;&gt;&lt;div class=&quot;cif-domain-grid&quot;&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;先看四类人&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;客户和用户：会不会付钱、持续使用和再次购买。&lt;/li&gt;&lt;li&gt;政府、城市和保险机构：会不会批准，责任由谁承担。&lt;/li&gt;&lt;li&gt;员工、伙伴和供应商：是否有能力和理由长期配合。&lt;/li&gt;&lt;li&gt;股东和债权人：是否愿意继续提供资金。&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card&quot;&gt;&lt;h4&gt;Tesla 例子&lt;/h4&gt;&lt;p&gt;Robotaxi 即使技术可用，也要分别得到政府许可、乘客信任、保险承保、城市配合和运营伙伴支持。口头欢迎不能替代正式许可和持续付费。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-red&quot;&gt;&lt;h4&gt;容易误判&lt;/h4&gt;&lt;p&gt;“有兴趣”不等于有预算；试用不等于签合同；签合同不等于实际部署；部署不等于持续使用和续费。产品也不能靠把成本或风险转给不愿承担的人来长期成立。&lt;/p&gt;&lt;/section&gt;
+                  &lt;section class=&quot;cif-mini-card cif-output&quot;&gt;&lt;h4&gt;发现变化后改什么&lt;/h4&gt;&lt;p&gt;更新每类人已经做出的真实行动、最低接受条件和下一步反应。口头支持变成许可、付款或续约后，才能提高项目成功和按时完成的判断。&lt;/p&gt;&lt;/section&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;不必把十个领域平均填满：&lt;/strong&gt;先找最不能判断错的问题，再集中查与它有关的领域。最高优先级记作 P0；会明显改变时间、成本或成功可能性的记作 P1；暂时不影响主要判断的背景信息记作 P2。&lt;/div&gt;
+          &lt;div class=&quot;cif-callout cif-callout-blue&quot;&gt;&lt;strong&gt;合上答案，做三个自测：&lt;/strong&gt;遮住领域名称后，你能否说清这一部分究竟想查什么？你能否举出一个看似利好、其实不能证明结论的例子？新事实出现后，你能否指出要修改哪一条判断和下一步查什么？有一项做不到，就先别往表里堆更多术语。&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;one-event&quot; aria-labelledby=&quot;one-event-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;同一件事，十个角度&lt;/p&gt;
+          &lt;h2 id=&quot;one-event-title&quot;&gt;公司宣布建新工厂，不能只问“利好还是利空”&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;十个领域不是十个互不相干的抽屉。它们会对同一件事提出不同问题，帮助我们找到真正缺少的事实。&lt;/p&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;领域&lt;/th&gt;&lt;th&gt;建新工厂时要问什么&lt;/th&gt;&lt;th&gt;什么事实才有用&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;整合&lt;/td&gt;&lt;td&gt;为什么一定要建？钱不投工厂还能做什么？&lt;/td&gt;&lt;td&gt;新工厂对现有业务和其他项目的具体帮助&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;范围&lt;/td&gt;&lt;td&gt;工厂准备生产什么，计划产多少？&lt;/td&gt;&lt;td&gt;产品、客户、产能边界和明确不包括的内容&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;进度&lt;/td&gt;&lt;td&gt;拿地、许可、建设、设备和试产哪一步最慢？&lt;/td&gt;&lt;td&gt;原计划、当前预计日期和延期原因&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;成本&lt;/td&gt;&lt;td&gt;建成和爬坡还要花多少？&lt;/td&gt;&lt;td&gt;总投入、剩余投入、维护成本和资金来源&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;质量&lt;/td&gt;&lt;td&gt;试产合格不等于稳定量产，合格率是多少？&lt;/td&gt;&lt;td&gt;良品率、返工、故障和客户验收&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;资源&lt;/td&gt;&lt;td&gt;缺的是设备、熟练员工、能源还是管理能力？&lt;/td&gt;&lt;td&gt;最窄的堵点和补足后应改善的结果&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;沟通&lt;/td&gt;&lt;td&gt;“开工、投产、量产”分别到了哪一步？&lt;/td&gt;&lt;td&gt;原始公告、许可、实际产量和统一口径&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;风险&lt;/td&gt;&lt;td&gt;需求不够、延期或超预算时会怎样？&lt;/td&gt;&lt;td&gt;最低利用率、现金缓冲和停止扩张的条件&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;采购&lt;/td&gt;&lt;td&gt;关键设备和原料由谁供应？&lt;/td&gt;&lt;td&gt;交期、合同、替代供应商和切换时间&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;相关方&lt;/td&gt;&lt;td&gt;政府、员工、客户和当地居民会不会配合？&lt;/td&gt;&lt;td&gt;正式许可、招聘、客户订单和实际行为&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;结论：&lt;/strong&gt;“投资金额很大”只是事实的一部分。只有把需求、时间、成本、质量和客户接起来，才能判断这座工厂是在创造未来能力，还是在制造新的负担。&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;operating-system&quot; aria-labelledby=&quot;ops-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;新消息怎样进入旧判断&lt;/p&gt;
+          &lt;h2 id=&quot;ops-title&quot;&gt;一条新消息来了，先别急着买卖&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;财报、新闻和帖子只有在改变公司事实、原来的判断或当前价格要求时，才值得进入决策。否则它们只是信息，不是行动理由。&lt;/p&gt;
+          &lt;div class=&quot;cif-tools-grid&quot;&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;h3&gt;用七步处理一条新信息&lt;/h3&gt;
+              &lt;ol class=&quot;cif-update-list&quot;&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;找原文：&lt;/strong&gt;谁最先发布？事情何时发生，何时公开？&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;拆开说法：&lt;/strong&gt;哪些已经发生，哪些是公司计划，哪些是作者解释？&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;判断可信度：&lt;/strong&gt;能否自己复核？还有没有独立来源？&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;指出改变：&lt;/strong&gt;它具体改变了十领域中的哪个事实或关键问题？&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;找比较对象：&lt;/strong&gt;与公司原计划、自己的旧判断、历史或同行相比，差在哪里？&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;只改必要部分：&lt;/strong&gt;没改变就记录“没有变化”；不要因一条消息重写整套故事。&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;strong&gt;决定下一步：&lt;/strong&gt;忽略、继续核实、更新判断、修改估值，或在理由充分时调整风险。&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/article&gt;
+            &lt;div class=&quot;cif-details-stack&quot;&gt;
+              &lt;details open&gt;&lt;summary&gt;重要程度和可信度是两件事&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;&lt;p&gt;一条传闻可能非常重要，但还不可靠；一份审计数据可能非常可靠，却不影响主要判断。把“会不会改变结论”和“证据能不能相信”分开记录，不要把“重要”误当成“已经证实”。&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;消息到底改变了多少&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;没有变化：&lt;/strong&gt;原判断、数字和行动都不需要改。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;只改数字或时间：&lt;/strong&gt;例如收入晚一年、成本提高一成。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;改了根本原因：&lt;/strong&gt;例如客户根本不需要产品，原来赚钱的理由不成立。&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;判断变强还是变弱&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;只用明显变强、稍微变强、没变化、稍微变弱、原判断不成立五档。没有足够数据时，不把 43% 改成 47% 来假装精确。&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;项目通过下一关后做什么&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;事前写清通过条件。结果出现后，公司可能继续加大投入、保持规模、重新设计、缩小项目或停止。项目管理常把这一步叫阶段关口（Stage-Gate）。&lt;/div&gt;&lt;/details&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;h3&gt;一份财报至少回答五件事&lt;/h3&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;先问什么&lt;/th&gt;&lt;th&gt;人话问题&lt;/th&gt;&lt;th&gt;常见误判&lt;/th&gt;&lt;th&gt;改到哪里&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;实际发生了什么&lt;/td&gt;&lt;td&gt;收入、利润、现金、产品和项目进度到底怎样？&lt;/td&gt;&lt;td&gt;只看每股利润是否超过分析师数字&lt;/td&gt;&lt;td&gt;对应的十领域事实&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;为什么和以前不同&lt;/td&gt;&lt;td&gt;差异来自销量、价格、成本、时间，还是算法变了？&lt;/td&gt;&lt;td&gt;把所有好结果都叫“超预期”&lt;/td&gt;&lt;td&gt;范围、进度、成本、质量&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;最关键的问题变了吗&lt;/td&gt;&lt;td&gt;哪个赚钱理由得到支持，哪个被削弱，哪个仍没被检验？&lt;/td&gt;&lt;td&gt;用一个季度证明多年后的结果&lt;/td&gt;&lt;td&gt;最高优先级问题&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;钱和资源够吗&lt;/td&gt;&lt;td&gt;现金、人才、设备和供应能否撑到下一次真正证明？&lt;/td&gt;&lt;td&gt;把账上全部现金当成可以随便使用&lt;/td&gt;&lt;td&gt;资源、成本、采购&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;股价要求要改吗&lt;/td&gt;&lt;td&gt;公司的时间、规模、利润或失败可能性是否明显变化？&lt;/td&gt;&lt;td&gt;用股价涨跌代替公司解释&lt;/td&gt;&lt;td&gt;下面的估值部分&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-formula&quot;&gt;&lt;strong&gt;新事实 → 改变谁的行动 → 怎样影响公司赚钱 → 何时能再次检查&lt;/strong&gt;&lt;span&gt;任何一段说不清，就先写“不知道”，再找一份能补上断点的原始资料。&lt;/span&gt;&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;valuation-layer&quot; aria-labelledby=&quot;valuation-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;公司事实之后，才看股票价格&lt;/p&gt;
+          &lt;h2 id=&quot;valuation-title&quot;&gt;公司很好，不代表股票现在便宜&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;买股票还要问：按今天这个价格，公司以后要赚到什么程度，我才不会买贵？价格不能唯一告诉我们市场相信什么，只能帮助我们测试几组可能的未来。&lt;/p&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;先用面包店理解：&lt;/strong&gt;一家面包店一年稳定赚 10 万元。有人要用 300 万元卖给你。如果利润永远不增长，你需要 30 年才能靠利润赚回买价。卖家之所以敢要 300 万元，通常是因为他相信以后会开更多店、赚更多钱。估值就是把“价格背后要求公司做到什么”说清楚。&lt;/div&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;要回答的问题&lt;/th&gt;&lt;th&gt;必须写清楚什么&lt;/th&gt;&lt;th&gt;不合格的回答&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;现价大约要求公司未来赚多少钱？&lt;/td&gt;&lt;td&gt;收入、利润或现金的大致范围，不假装只有唯一答案&lt;/td&gt;&lt;td&gt;“市场很看好”&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;这些利润要多久才能出现？&lt;/td&gt;&lt;td&gt;最好、一般、最坏三种时间&lt;/td&gt;&lt;td&gt;“长期一定会实现”&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;中间还要投入多少钱？&lt;/td&gt;&lt;td&gt;建厂、研发、运营和融资需求&lt;/td&gt;&lt;td&gt;只计算成功后的收入&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;如果项目只成功一半呢？&lt;/td&gt;&lt;td&gt;部分成功、延期或失败时每股可能怎样&lt;/td&gt;&lt;td&gt;只有一个目标价&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;自己究竟不同意市场哪一点？&lt;/td&gt;&lt;td&gt;一个具体的规模、利润、时间或成功判断，以及证据&lt;/td&gt;&lt;td&gt;“公司很好、空间很大”&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+
+          &lt;h3&gt;业务越成熟，证据要求越高&lt;/h3&gt;
+          &lt;div class=&quot;cif-ladder&quot; aria-label=&quot;业务成熟后的证据要求&quot;&gt;
+            &lt;article&gt;&lt;strong&gt;只有想法&lt;/strong&gt;&lt;span&gt;最多说明值得继续观察。&lt;/span&gt;&lt;/article&gt;&lt;article&gt;&lt;strong&gt;有人使用&lt;/strong&gt;&lt;span&gt;继续看是否持续使用。&lt;/span&gt;&lt;/article&gt;&lt;article&gt;&lt;strong&gt;有人付钱&lt;/strong&gt;&lt;span&gt;确认订单是否变成真实收入。&lt;/span&gt;&lt;/article&gt;&lt;article&gt;&lt;strong&gt;多卖能多赚&lt;/strong&gt;&lt;span&gt;检查业务扩大后现金是否改善。&lt;/span&gt;&lt;/article&gt;&lt;article&gt;&lt;strong&gt;赚回投入&lt;/strong&gt;&lt;span&gt;判断多年投入是否值得。&lt;/span&gt;&lt;/article&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;把公司和股价分开：&lt;/strong&gt;公司事实可以变好或变坏，股价要求也可以变高或变低。股价下跌不自动说明公司变差，也不自动说明股票便宜。&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;execution-layer&quot; aria-labelledby=&quot;execution-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;最后才约束自己的行动&lt;/p&gt;
+          &lt;h2 id=&quot;execution-title&quot;&gt;即使判断有道理，也别让一次错误伤得太重&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;研究不可能消除错误。执行部分要解决的是：公司判断错了、赚钱结果来得更晚或价格剧烈波动时，自己仍然有能力继续生活和继续投资。&lt;/p&gt;
+          &lt;ol class=&quot;cif-gates&quot; aria-label=&quot;投资前六项检查&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;公司撑得住吗&lt;/strong&gt;&lt;span&gt;价值出现前，公司会不会先破产、被迫融资、失去许可或永久受损？&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;我到底在赌什么&lt;/strong&gt;&lt;span&gt;用一句话说清赚钱理由，并用不超过五步说明钱怎样来到股东手里。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;我凭什么可能判断得更好&lt;/strong&gt;&lt;span&gt;是多看了一项事实、做了更好的比较，还是仅仅更有信心？&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;现在的价格贵不贵&lt;/strong&gt;&lt;span&gt;现价要求什么，我具体不同意哪一个规模、利润、时间或成功判断？&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;错了会亏多少&lt;/strong&gt;&lt;span&gt;分别估计最好、一般、最坏结果和等待时间。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;准备怎样行动&lt;/strong&gt;&lt;span&gt;事前写好投入多少、何时复查、看到什么加减仓或退出。&lt;/span&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;div class=&quot;cif-tools-grid&quot;&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;h3&gt;允许投入多少，取四个限制里最小的一个&lt;/h3&gt;
+              &lt;p&gt;先决定整笔资产最多愿意损失多少，再反推仓位。观点再强，也不能让一次判断错误破坏整个生活和组合。&lt;/p&gt;
+              &lt;ul&gt;&lt;li&gt;&lt;strong&gt;价格限制：&lt;/strong&gt;如果预定跌到某个位置就认错，这段跌幅允许买多少。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;最坏结果限制：&lt;/strong&gt;公司基本面恶化时可能跌多少，组合能承受多少。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;同类风险限制：&lt;/strong&gt;几只股票如果都押同一个行业或宏观因素，要合起来计算。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;卖出难度限制：&lt;/strong&gt;市场冷清或恐慌时，能否在合理时间和价格卖出。&lt;/li&gt;&lt;/ul&gt;
+            &lt;/article&gt;
+            &lt;div class=&quot;cif-details-stack&quot;&gt;
+              &lt;details open&gt;&lt;summary&gt;四种必须认错的情况&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;事实错了：&lt;/strong&gt;最关键的赚钱理由被新证据推翻。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;价格规则触发：&lt;/strong&gt;仅适用于事前定义过的交易规则，不能亏损后临时发明。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;时间到了：&lt;/strong&gt;约定日期仍没出现应有进展，要重新计算等待成本。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;整体风险过大：&lt;/strong&gt;同类持仓、借钱、卖出难度或生活用钱超过上限。&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;下跌先查来自哪里&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;依次检查整个市场、所属行业、公司事实和是否有人被迫卖出。公司自身出问题，与所有股票一起下跌不是同一件事；但“只是市场跌”也不能代替损失检查。&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;加仓、持有、减仓和退出不能混&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;&lt;ul&gt;&lt;li&gt;退出：公司生存或最关键的赚钱理由已经断裂。&lt;/li&gt;&lt;li&gt;减仓：判断变弱、信息不足或整体风险超限。&lt;/li&gt;&lt;li&gt;持有：原判断、时间和可承受损失都没变。&lt;/li&gt;&lt;li&gt;加仓：出现了事前要求的新事实，而且加仓后总损失仍能承受。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;“已经跌很多”本身不是加仓证据。&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+              &lt;details&gt;&lt;summary&gt;技术分析属于另一种实验&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;趋势、反转、事件和量化交易需要自己的规则、样本、费用和停止条件，使用项目内独立《策略验证卡》。它们不能代替公司研究。&lt;/div&gt;&lt;/details&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;quick-screen&quot; aria-labelledby=&quot;screen-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;真正可执行的研究入口&lt;/p&gt;
+          &lt;h2 id=&quot;screen-title&quot;&gt;30 分钟只回答：要不要继续花时间？&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;30 分钟足够发现明显问题，不足以完成专业估值和仓位决定。缺数据就写“不知道”，不要为了填满表格猜数字。&lt;/p&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;只做什么&lt;/th&gt;&lt;th&gt;最小结果&lt;/th&gt;&lt;th&gt;可以停止的情况&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;0—10 分钟&lt;/td&gt;&lt;td&gt;看公司卖什么、谁付钱、主要业务是否赚钱&lt;/td&gt;&lt;td&gt;用一句人话说明公司怎样赚钱&lt;/td&gt;&lt;td&gt;仍说不清谁为什么付钱&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;10—20 分钟&lt;/td&gt;&lt;td&gt;看最近财报中的收入、利润、现金、负债和总股数&lt;/td&gt;&lt;td&gt;找出一个明显危险或一个重要未知&lt;/td&gt;&lt;td&gt;存在生存、造假或无法解释的融资问题&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;20—30 分钟&lt;/td&gt;&lt;td&gt;找出最不能判断错的一件事&lt;/td&gt;&lt;td&gt;写出下一份要查的原始资料&lt;/td&gt;&lt;td&gt;问题无法用公开事实继续检查&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-decision-row&quot; aria-label=&quot;初筛三种结果&quot;&gt;&lt;span&gt;直接放弃&lt;/span&gt;&lt;span&gt;信息不足，先核实&lt;/span&gt;&lt;span&gt;值得继续研究&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;继续研究后的第一份作业：&lt;/strong&gt;连续整理 8—12 个季度的六组财务数字，列出赚钱业务和花钱项目，写下三个最不能判断错的问题、五条具体风险，以及现价要求公司大致做到什么。&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;footer class=&quot;cif-footer&quot;&gt;
+          &lt;p&gt;&lt;strong&gt;研究边界：&lt;/strong&gt;本工作台用于组织证据、发现偏差和定义复核动作，不提供个股推荐、目标价或收益承诺。&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;结构说明：&lt;/strong&gt;十领域是公司研究的固定一级骨架；市场估值、投资者执行和独立策略实验位于骨架之外，各自使用不同证据。&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;配套练习：&lt;/strong&gt;读懂问题后，打开同目录下《投资框架练习册》，把来源、比较对象、反例和下一步写到自己研究的公司上。&lt;/p&gt;
+        &lt;/footer&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    (function () {
+      &quot;use strict&quot;;
+      var root = document.getElementById(&quot;company-investment-framework&quot;);
+      if (!root) return;
+
+      var printButton = root.querySelector(&quot;[data-print]&quot;);
+      if (printButton) printButton.addEventListener(&quot;click&quot;, function () { window.print(); });
+
+      var links = Array.prototype.slice.call(root.querySelectorAll(&quot;a[href^=&#x27;#&#x27;]&quot;));
+      links.forEach(function (link) {
+        link.addEventListener(&quot;click&quot;, function (event) {
+          var selector = link.getAttribute(&quot;href&quot;);
+          if (!selector || selector === &quot;#&quot;) return;
+          var target = root.querySelector(selector);
+          if (!target) return;
+          event.preventDefault();
+          var reduced = window.matchMedia &amp;&amp; window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches;
+          target.scrollIntoView({ behavior: reduced ? &quot;auto&quot; : &quot;smooth&quot;, block: &quot;start&quot; });
+          try {
+            if (window.history &amp;&amp; window.history.replaceState) window.history.replaceState(null, &quot;&quot;, selector);
+          } catch (error) {
+            // srcdoc 离线容器不允许改写父页面 URL；滚动和目录高亮仍然有效。
+          }
+        });
+      });
+
+      var domainLinks = Array.prototype.slice.call(root.querySelectorAll(&quot;[data-domain-link]&quot;));
+      if (!domainLinks.length || !(&quot;IntersectionObserver&quot; in window)) return;
+      var linkById = {};
+      domainLinks.forEach(function (link) {
+        var href = link.getAttribute(&quot;href&quot;);
+        if (href) linkById[href.slice(1)] = link;
+      });
+      var sections = Object.keys(linkById).map(function (id) { return root.querySelector(&quot;#&quot; + id); }).filter(Boolean);
+      var observer = new IntersectionObserver(function (entries) {
+        var visible = entries.filter(function (entry) { return entry.isIntersecting; });
+        if (!visible.length) return;
+        visible.sort(function (a, b) { return Math.abs(a.boundingClientRect.top) - Math.abs(b.boundingClientRect.top); });
+        domainLinks.forEach(function (link) { link.removeAttribute(&quot;aria-current&quot;); });
+        var active = linkById[visible[0].target.id];
+        if (active) active.setAttribute(&quot;aria-current&quot;, &quot;location&quot;);
+      }, { rootMargin: &quot;-8% 0px -78% 0px&quot;, threshold: [0, .01] });
+      sections.forEach(function (section) { observer.observe(section); });
+    }());
+  &lt;/script&gt;
+&lt;/main&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>
