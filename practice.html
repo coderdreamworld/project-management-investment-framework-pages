@@ -1,0 +1,1665 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>项目管理投资框架练习册</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts allow-same-origin allow-downloads" referrerpolicy="no-referrer" title="项目管理投资框架练习册" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;项目管理投资框架练习册&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --red: light-dark(rgb(186 38 35), rgb(250 66 62));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: var(--border-radius-lg, 12.5px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main id=&quot;pm-investment-practice&quot;&gt;
+  &lt;style&gt;
+    #pm-investment-practice {
+      --pif-bg: #f4f1e8;
+      --pif-surface: #fffdf8;
+      --pif-soft: #eeebe1;
+      --pif-ink: #1d2927;
+      --pif-muted: #65716e;
+      --pif-line: #d4d7ce;
+      --pif-accent: #196d64;
+      --pif-accent-soft: #dceee9;
+      --pif-warn: #91472d;
+      --pif-warn-soft: #f5e3d9;
+      --pif-blue: #315f83;
+      --pif-blue-soft: #e2edf5;
+      --pif-radius: 16px;
+      min-height: 100vh;
+      background: var(--pif-bg);
+      color: var(--pif-ink);
+      font-family: Inter, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif;
+      line-height: 1.68;
+    }
+    #pm-investment-practice * { box-sizing: border-box; }
+    #pm-investment-practice button,
+    #pm-investment-practice input,
+    #pm-investment-practice textarea,
+    #pm-investment-practice select { font: inherit; }
+    #pm-investment-practice a { color: inherit; }
+    #pm-investment-practice h1,
+    #pm-investment-practice h2,
+    #pm-investment-practice h3,
+    #pm-investment-practice h4 { margin: 0; line-height: 1.25; }
+    #pm-investment-practice p { margin: 0 0 12px; }
+    #pm-investment-practice .pif-shell { display: grid; grid-template-columns: 250px minmax(0, 980px); gap: 38px; max-width: 1320px; margin: 0 auto; padding: 30px 32px 70px; }
+    #pm-investment-practice .pif-sidebar { position: sticky; top: 18px; align-self: start; max-height: calc(100vh - 36px); overflow: auto; padding: 18px; border: 1px solid var(--pif-line); border-radius: var(--pif-radius); background: rgba(255, 253, 248, .94); }
+    #pm-investment-practice .pif-brand { margin-bottom: 14px; font-weight: 850; }
+    #pm-investment-practice .pif-sidebar p { color: var(--pif-muted); font-size: .8rem; }
+    #pm-investment-practice .pif-nav { display: grid; gap: 3px; margin: 15px 0; }
+    #pm-investment-practice .pif-nav a { padding: 7px 9px; border-radius: 8px; text-decoration: none; font-size: .84rem; }
+    #pm-investment-practice .pif-nav a:hover,
+    #pm-investment-practice .pif-nav a[aria-current=&quot;location&quot;] { background: var(--pif-accent-soft); color: var(--pif-accent); font-weight: 760; }
+    #pm-investment-practice .pif-toolbar { display: grid; gap: 7px; }
+    #pm-investment-practice .pif-button { width: 100%; padding: 8px 10px; border: 1px solid var(--pif-line); border-radius: 9px; background: var(--pif-surface); color: var(--pif-ink); cursor: pointer; font-weight: 720; }
+    #pm-investment-practice .pif-button:hover { border-color: var(--pif-accent); }
+    #pm-investment-practice .pif-button-primary { border-color: var(--pif-accent); background: var(--pif-accent); color: #fff; }
+    #pm-investment-practice .pif-button-danger { color: var(--pif-warn); }
+    #pm-investment-practice .pif-status { min-height: 2.8em; margin-top: 10px; color: var(--pif-muted); font-size: .75rem; }
+    #pm-investment-practice .pif-content { min-width: 0; }
+    #pm-investment-practice .pif-hero { padding: 34px; border: 1px solid var(--pif-line); border-radius: 22px; background: var(--pif-surface); box-shadow: 0 18px 45px rgba(35, 48, 45, .08); }
+    #pm-investment-practice .pif-eyebrow { color: var(--pif-accent); font-size: .75rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    #pm-investment-practice h1 { max-width: 760px; margin: 8px 0 15px; font-size: clamp(2rem, 5vw, 4.1rem); letter-spacing: -.04em; }
+    #pm-investment-practice .pif-lead { max-width: 780px; color: var(--pif-muted); font-size: 1.03rem; }
+    #pm-investment-practice .pif-callout { margin-top: 18px; padding: 15px 17px; border-left: 4px solid var(--pif-accent); border-radius: 10px; background: var(--pif-accent-soft); }
+    #pm-investment-practice .pif-basics { display: grid; grid-template-columns: 1.4fr .7fr .8fr; gap: 13px; margin-top: 22px; }
+    #pm-investment-practice .pif-section { scroll-margin-top: 20px; margin-top: 25px; padding: 26px; border: 1px solid var(--pif-line); border-radius: var(--pif-radius); background: var(--pif-surface); }
+    #pm-investment-practice .pif-section-head { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 15px; align-items: start; }
+    #pm-investment-practice .pif-number { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 13px; background: var(--pif-accent); color: #fff; font-size: 1.05rem; font-weight: 900; }
+    #pm-investment-practice .pif-section h2 { font-size: clamp(1.45rem, 3vw, 2.05rem); }
+    #pm-investment-practice .pif-question { margin: 5px 0 0; color: var(--pif-muted); }
+    #pm-investment-practice .pif-example-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 19px 0; }
+    #pm-investment-practice .pif-example { padding: 15px; border: 1px solid var(--pif-line); border-radius: 12px; background: var(--pif-soft); }
+    #pm-investment-practice .pif-example:last-child { background: var(--pif-blue-soft); }
+    #pm-investment-practice .pif-example h3 { margin-bottom: 6px; font-size: .86rem; }
+    #pm-investment-practice .pif-example p { margin: 0; color: var(--pif-muted); font-size: .86rem; }
+    #pm-investment-practice .pif-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+    #pm-investment-practice .pif-field { display: grid; gap: 5px; min-width: 0; }
+    #pm-investment-practice .pif-field-wide { grid-column: 1 / -1; }
+    #pm-investment-practice label { font-size: .82rem; font-weight: 790; }
+    #pm-investment-practice .pif-hint { color: var(--pif-muted); font-size: .74rem; font-weight: 500; }
+    #pm-investment-practice input,
+    #pm-investment-practice textarea,
+    #pm-investment-practice select { width: 100%; border: 1px solid var(--pif-line); border-radius: 9px; background: #fff; color: var(--pif-ink); }
+    #pm-investment-practice input,
+    #pm-investment-practice select { min-height: 42px; padding: 8px 10px; }
+    #pm-investment-practice textarea { min-height: 90px; padding: 10px; resize: vertical; line-height: 1.55; }
+    #pm-investment-practice input:focus,
+    #pm-investment-practice textarea:focus,
+    #pm-investment-practice select:focus { outline: 3px solid rgba(25, 109, 100, .18); border-color: var(--pif-accent); }
+    #pm-investment-practice .pif-self-check { margin: 16px 0 0; padding: 13px 15px; border-radius: 10px; background: var(--pif-warn-soft); color: #6e3827; font-size: .82rem; }
+    #pm-investment-practice .pif-summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 20px; }
+    #pm-investment-practice .pif-summary-preview { min-height: 320px; margin: 18px 0 10px; padding: 18px; overflow: auto; border: 1px solid var(--pif-line); border-radius: 12px; background: #172321; color: #edf4f1; white-space: pre-wrap; font: .84rem/1.65 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    #pm-investment-practice .pif-summary-actions { display: flex; gap: 9px; }
+    #pm-investment-practice .pif-summary-actions .pif-button { width: auto; }
+    #pm-investment-practice .pif-footer { padding: 25px 6px 0; color: var(--pif-muted); font-size: .8rem; }
+    @media (prefers-color-scheme: dark) {
+      #pm-investment-practice { --pif-bg: #141a19; --pif-surface: #1c2422; --pif-soft: #242d2b; --pif-ink: #eef3f0; --pif-muted: #b4bfbb; --pif-line: #3a4643; --pif-accent: #83c8be; --pif-accent-soft: #203b37; --pif-warn: #e3a58d; --pif-warn-soft: #472f27; --pif-blue-soft: #223642; }
+      #pm-investment-practice input,
+      #pm-investment-practice textarea,
+      #pm-investment-practice select { background: #151c1a; }
+      #pm-investment-practice .pif-sidebar { background: rgba(28, 36, 34, .96); }
+    }
+    @media (max-width: 900px) {
+      #pm-investment-practice .pif-shell { grid-template-columns: 1fr; padding: 18px; }
+      #pm-investment-practice .pif-sidebar { position: static; max-height: none; }
+      #pm-investment-practice .pif-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #pm-investment-practice .pif-toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      #pm-investment-practice .pif-shell { padding: 10px; gap: 15px; }
+      #pm-investment-practice .pif-hero,
+      #pm-investment-practice .pif-section { padding: 19px; }
+      #pm-investment-practice .pif-basics,
+      #pm-investment-practice .pif-example-grid,
+      #pm-investment-practice .pif-form-grid,
+      #pm-investment-practice .pif-summary-grid { grid-template-columns: 1fr; }
+      #pm-investment-practice .pif-field-wide { grid-column: auto; }
+      #pm-investment-practice .pif-section-head { grid-template-columns: 40px minmax(0, 1fr); }
+      #pm-investment-practice .pif-number { width: 40px; height: 40px; }
+    }
+    @media print {
+      #pm-investment-practice { background: #fff; color: #111; }
+      #pm-investment-practice .pif-shell { display: block; max-width: none; padding: 0; }
+      #pm-investment-practice .pif-sidebar,
+      #pm-investment-practice .pif-summary-actions { display: none; }
+      #pm-investment-practice .pif-hero,
+      #pm-investment-practice .pif-section { break-inside: avoid; margin: 0 0 15px; box-shadow: none; }
+      #pm-investment-practice input,
+      #pm-investment-practice textarea,
+      #pm-investment-practice select { background: #fff; color: #111; }
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;pif-shell&quot;&gt;
+    &lt;aside class=&quot;pif-sidebar&quot; aria-label=&quot;练习册目录和工具&quot;&gt;
+      &lt;div class=&quot;pif-brand&quot;&gt;项目管理投资框架练习册&lt;/div&gt;
+      &lt;p&gt;与主框架共用同一套十领域。这里不学新名词，只把判断写下来。&lt;/p&gt;
+      &lt;nav class=&quot;pif-nav&quot; aria-label=&quot;十领域目录&quot;&gt;
+        &lt;a href=&quot;#practice-integration&quot; data-nav&gt;01 整合管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-scope&quot; data-nav&gt;02 范围管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-schedule&quot; data-nav&gt;03 进度管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-cost&quot; data-nav&gt;04 成本管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-quality&quot; data-nav&gt;05 质量管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-resource&quot; data-nav&gt;06 资源管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-communication&quot; data-nav&gt;07 沟通管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-risk&quot; data-nav&gt;08 风险管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-procurement&quot; data-nav&gt;09 采购管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-stakeholder&quot; data-nav&gt;10 相关方管理&lt;/a&gt;
+        &lt;a href=&quot;#practice-summary&quot; data-nav&gt;汇总与下一步&lt;/a&gt;
+      &lt;/nav&gt;
+      &lt;div class=&quot;pif-toolbar&quot;&gt;
+        &lt;button class=&quot;pif-button pif-button-primary&quot; type=&quot;button&quot; data-export&gt;导出记录&lt;/button&gt;
+        &lt;button class=&quot;pif-button&quot; type=&quot;button&quot; data-import-button&gt;导入记录&lt;/button&gt;
+        &lt;button class=&quot;pif-button&quot; type=&quot;button&quot; data-print&gt;打印 / 保存为电子文档（PDF）&lt;/button&gt;
+        &lt;button class=&quot;pif-button pif-button-danger&quot; type=&quot;button&quot; data-reset&gt;清空全部&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;input type=&quot;file&quot; accept=&quot;application/json&quot; hidden data-import-file&gt;
+      &lt;div class=&quot;pif-status&quot; role=&quot;status&quot; aria-live=&quot;polite&quot; data-status&gt;正在读取本机记录……&lt;/div&gt;
+    &lt;/aside&gt;
+
+    &lt;div class=&quot;pif-content&quot;&gt;
+      &lt;header class=&quot;pif-hero&quot;&gt;
+        &lt;p class=&quot;pif-eyebrow&quot;&gt;先写不知道，再去查事实&lt;/p&gt;
+        &lt;h1&gt;把十个项目管理领域，真的用在一家公司上&lt;/h1&gt;
+        &lt;p class=&quot;pif-lead&quot;&gt;每一栏都允许写“不知道”。练习的目标不是一次填满，而是把事实、比较、反例和下一步分开。输入会自动保存在当前浏览器，也可以导出成文件备份。&lt;/p&gt;
+        &lt;div class=&quot;pif-callout&quot;&gt;&lt;strong&gt;推荐用法：&lt;/strong&gt;第一次只做 30 分钟初筛，写清公司怎样赚钱和最不能判断错的一件事。决定继续研究后，再按问题需要填写十领域，不要为了完整而平均用力。&lt;/div&gt;
+        &lt;div class=&quot;pif-basics&quot;&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-company&quot;&gt;研究的公司&lt;/label&gt;&lt;input id=&quot;practice-company&quot; data-field=&quot;meta.company&quot; placeholder=&quot;例如：Tesla&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-ticker&quot;&gt;股票代码&lt;/label&gt;&lt;input id=&quot;practice-ticker&quot; data-field=&quot;meta.ticker&quot; placeholder=&quot;例如：TSLA&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-date&quot;&gt;资料截止日期&lt;/label&gt;&lt;input id=&quot;practice-date&quot; type=&quot;date&quot; data-field=&quot;meta.cutoffDate&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-integration&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;01&lt;/span&gt;&lt;div&gt;&lt;h2&gt;整合管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;这些业务在互相帮助，还是互相抢钱、抢人、拖慢进度？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;老店赚钱，新店装修在花钱。共用采购能省钱是帮助；两家店争同一个店长导致都管不好，就是拖累。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;汽车、储能、自动驾驶和机器人共用人工智能（AI）能力，只有真的让开发更快、成本更低或产品更可靠，才算帮助。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;integration-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;哪些现在赚钱，哪些还在花钱？&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;integration-answer&quot; data-field=&quot;domains.integration.answer&quot; placeholder=&quot;不知道也可以写：目前只知道……还不知道……&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;integration-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;integration-source&quot; data-field=&quot;domains.integration.source&quot; placeholder=&quot;财报页码、公告链接或访谈日期&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;integration-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;integration-compare&quot; data-field=&quot;domains.integration.comparison&quot; placeholder=&quot;去年、原计划、同行或另一种资金用途&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;integration-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;integration-wrong&quot; data-field=&quot;domains.integration.disproof&quot; placeholder=&quot;例如：共用团队后两个项目都持续延期&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;integration-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;integration-next&quot; data-field=&quot;domains.integration.next&quot; placeholder=&quot;一份资料、一个数字或一个具体事实&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我是否把“业务听起来有关”误当成真实帮助？我能否说出省了多少钱、快了多久或可靠性怎样变化？若几个项目同时缺钱，我知道公司先保谁吗？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-scope&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;02&lt;/span&gt;&lt;div&gt;&lt;h2&gt;范围管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;公司究竟答应做到哪一步，哪些并没有答应？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;“开第二家店”要拆成签租约、装修、拿许可、开门和稳定盈利；签租约不能算已经开店。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;Robotaxi 的演示、有限测试、正式许可、付费接客和可赚钱运营不是同一件事，必须说明现在到了哪一步。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;scope-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;已做到、没做到、明确不包括什么？&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;scope-answer&quot; data-field=&quot;domains.scope.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;scope-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;scope-source&quot; data-field=&quot;domains.scope.source&quot; placeholder=&quot;优先写原始资料&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;scope-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;scope-compare&quot; data-field=&quot;domains.scope.comparison&quot; placeholder=&quot;公司原话、旧版本、同行产品&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;scope-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;scope-wrong&quot; data-field=&quot;domains.scope.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;scope-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;scope-next&quot; data-field=&quot;domains.scope.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我是否把“计划做”写成“已经做到”？我能否说出真正能验收的结果？哪些功能、地区、客户或成本明确不在本次承诺里？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-schedule&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;03&lt;/span&gt;&lt;div&gt;&lt;h2&gt;进度管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;离真正可用和赚钱还差哪几步，哪一步最可能拖住全部结果？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;装修完成后还要验收、招人、试营业。晚到的烤箱可能让其他准备全部白等。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;车辆能自动行驶不等于 Robotaxi 能运营；许可、保险、远程协助和车队维护任何一步都可能决定真实时间。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;schedule-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;下一步、当前预计时间、最大的延期原因&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;schedule-answer&quot; data-field=&quot;domains.schedule.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;schedule-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;schedule-source&quot; data-field=&quot;domains.schedule.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;schedule-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;schedule-compare&quot; data-field=&quot;domains.schedule.comparison&quot; placeholder=&quot;原计划与当前预计时间&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;schedule-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;schedule-wrong&quot; data-field=&quot;domains.schedule.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;schedule-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;schedule-next&quot; data-field=&quot;domains.schedule.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我写的是公司给的日期，还是完成这件事所需步骤推出来的日期？过去延期过几次？延期会不会增加成本或让客户离开？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-cost&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;04&lt;/span&gt;&lt;div&gt;&lt;h2&gt;成本管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;做成还要花多少，公司的钱够不够，旧股东会不会被迫分薄？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;装修预算只算了设备，却漏了租金、培训、损耗和开业后的亏损，就会在真正赚钱前先没钱。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;训练算力、芯片、车辆、保险、充电、清洁和远程协助都要花钱，不能只看一辆车的制造成本。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;cost-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;现金、负债、正在投入和大约还要花多少&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;cost-answer&quot; data-field=&quot;domains.cost.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;cost-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;cost-source&quot; data-field=&quot;domains.cost.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;cost-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;cost-compare&quot; data-field=&quot;domains.cost.comparison&quot; placeholder=&quot;预算、上期、同行或每单位成本&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;cost-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;cost-wrong&quot; data-field=&quot;domains.cost.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;cost-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;cost-next&quot; data-field=&quot;domains.cost.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;账上现金是否已有明确用途？项目扩大后每多卖一件是多赚还是多亏？如果需要增发股票，每个旧股东所占比例会变小多少？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-quality&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;05&lt;/span&gt;&lt;div&gt;&lt;h2&gt;质量管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;产品是真的稳定好用，还是只在精心准备的演示里好看？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;开业当天的面包好吃不够；高峰期连续三个月仍能按时出炉、少退货、顾客复购，才接近稳定质量。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;一次无人干预的视频不能说明 Robotaxi 可运营，要看真实道路、坏天气、事故和人工帮忙次数。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;quality-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;使用场景、成功率和主要失败情况&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;quality-answer&quot; data-field=&quot;domains.quality.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;quality-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;quality-source&quot; data-field=&quot;domains.quality.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;quality-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;quality-compare&quot; data-field=&quot;domains.quality.comparison&quot; placeholder=&quot;旧版本、人工方案、同行、承诺标准&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;quality-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;quality-wrong&quot; data-field=&quot;domains.quality.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;quality-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;quality-next&quot; data-field=&quot;domains.quality.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;样本覆盖了普通和困难场景吗？公司只公布成功次数，还是也公布失败次数？质量提高是否靠更多人工或更高成本换来？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-resource&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;06&lt;/span&gt;&lt;div&gt;&lt;h2&gt;资源管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;现在真正卡住公司的是什么，补上后结果应该怎样变化？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;客人很多却只有一台烤箱，增加广告没有用；补一台烤箱后等待时间和销量应该立刻改善。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;限制 AI 进展的可能是算力、训练数据、芯片、工程师或监管，不同堵点需要不同证据和解决办法。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;resource-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;最窄的堵点、补充办法、应改善的数字&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;resource-answer&quot; data-field=&quot;domains.resource.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;resource-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;resource-source&quot; data-field=&quot;domains.resource.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;resource-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;resource-compare&quot; data-field=&quot;domains.resource.comparison&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;resource-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;resource-wrong&quot; data-field=&quot;domains.resource.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;resource-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;resource-next&quot; data-field=&quot;domains.resource.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我找到的是根因还是表面症状？补上资源后，哪个数字应在多久内改善？公司能否买到、招到或自己培养这项资源？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-communication&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;07&lt;/span&gt;&lt;div&gt;&lt;h2&gt;沟通管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;谁说的，原始证据在哪里，事实、公司计划和我的推断是否分开？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;“顾客都很喜欢”是店长说法；复购率和退款记录是事实；“下月会盈利”仍是推断。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;把监管文件、财报数字、管理层目标、媒体转述和个人推断放在同一层，会让一个猜测看起来像已经证实。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;communication-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;最关键事实、公司说法和个人推断分别是什么&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;communication-answer&quot; data-field=&quot;domains.communication.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;communication-source&quot;&gt;最接近原始的来源&lt;/label&gt;&lt;input id=&quot;communication-source&quot; data-field=&quot;domains.communication.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;communication-compare&quot;&gt;跟什么交叉核对&lt;/label&gt;&lt;input id=&quot;communication-compare&quot; data-field=&quot;domains.communication.comparison&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;communication-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;communication-wrong&quot; data-field=&quot;domains.communication.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;communication-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;communication-next&quot; data-field=&quot;domains.communication.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我能找到原文而不是二手标题吗？事情发生日期和报道日期是否混淆？同一个词在不同季度有没有偷偷改变意思？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-risk&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;08&lt;/span&gt;&lt;div&gt;&lt;h2&gt;风险管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;最坏的事情怎样一步步发生，公司扛得住吗，我现在盯什么？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;食品事故 → 停业调查 → 顾客流失 → 现金不够交租。保险和备用现金能减轻损失，但不能让事故消失。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;严重事故 → 服务暂停 → 更多城市收紧许可 → 收入推迟 → 继续烧钱。事故率、人工接管和许可范围是可观察信号。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;risk-answer&quot;&gt;先用一句话写完整坏事链 &lt;span class=&quot;pif-hint&quot;&gt;现在经不起什么 → 什么引爆 → 怎样传下去 → 什么能缓冲&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;risk-answer&quot; data-field=&quot;domains.risk.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;risk-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;risk-source&quot; data-field=&quot;domains.risk.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;risk-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;risk-compare&quot; data-field=&quot;domains.risk.comparison&quot; placeholder=&quot;历史事故、同行、压力情景&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;risk-wrong&quot;&gt;什么说明风险正在变小&lt;/label&gt;&lt;textarea id=&quot;risk-wrong&quot; data-field=&quot;domains.risk.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;risk-next&quot;&gt;下一步盯什么；发生后改什么&lt;/label&gt;&lt;textarea id=&quot;risk-next&quot; data-field=&quot;domains.risk.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;我写的是“风险很大”还是完整过程？最坏结果会伤到收入、现金、许可还是公司生存？我是否事前写明发生后修改哪条预测或行动？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-procurement&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;09&lt;/span&gt;&lt;div&gt;&lt;h2&gt;采购管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;关键东西依赖谁，对方出问题时能不能换，换一次要多久、多少钱？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;独家面粉便宜但只有一家供应商。断货后找到另一家不够，新面粉还要重新试配方和通过顾客检验。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;芯片、电池材料、云算力和关键设备即使有替代者，也要看认证、产能、价格和切换时间。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;procurement-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;关键供应商、替代方案、切换时间和代价&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;procurement-answer&quot; data-field=&quot;domains.procurement.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;procurement-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;procurement-source&quot; data-field=&quot;domains.procurement.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;procurement-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;procurement-compare&quot; data-field=&quot;domains.procurement.comparison&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;procurement-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;procurement-wrong&quot; data-field=&quot;domains.procurement.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;procurement-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;procurement-next&quot; data-field=&quot;domains.procurement.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;“有第二家供应商”是否已经通过认证并能给足产量？合同锁住的是价格、数量还是两者都没有？供应中断会先影响哪个产品和多久？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-stakeholder&quot; data-practice-section&gt;
+        &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;10&lt;/span&gt;&lt;div&gt;&lt;h2&gt;相关方管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;谁能让项目成功或失败，他们为什么会配合，真实行动是什么？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-example-grid&quot;&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;面包店例子&lt;/h3&gt;&lt;p&gt;房东、员工、顾客、外卖平台和监管部门都能影响新店。“支持开店”不等于愿意降租、留下工作或持续下单。&lt;/p&gt;&lt;/article&gt;&lt;article class=&quot;pif-example&quot;&gt;&lt;h3&gt;Tesla 例子&lt;/h3&gt;&lt;p&gt;Robotaxi 要分别得到政府许可、乘客信任、保险承保和城市配合，口头欢迎不能替代正式许可和持续付费。&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-form-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;stakeholder-answer&quot;&gt;先用一句话回答 &lt;span class=&quot;pif-hint&quot;&gt;客户、政府、员工、伙伴和竞争者会怎样行动&lt;/span&gt;&lt;/label&gt;&lt;textarea id=&quot;stakeholder-answer&quot; data-field=&quot;domains.stakeholder.answer&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;stakeholder-source&quot;&gt;事实来自哪里&lt;/label&gt;&lt;input id=&quot;stakeholder-source&quot; data-field=&quot;domains.stakeholder.source&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;stakeholder-compare&quot;&gt;跟什么比较&lt;/label&gt;&lt;input id=&quot;stakeholder-compare&quot; data-field=&quot;domains.stakeholder.comparison&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;stakeholder-wrong&quot;&gt;什么会证明我错了&lt;/label&gt;&lt;textarea id=&quot;stakeholder-wrong&quot; data-field=&quot;domains.stakeholder.disproof&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;stakeholder-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;stakeholder-next&quot; data-field=&quot;domains.stakeholder.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;检查自己：&lt;/strong&gt;“有兴趣”是否有预算和合同？签合同是否真的部署和续费？谁承担成本与风险，谁因此可能拒绝、拖延或转向竞争者？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-summary&quot; data-practice-section&gt;
+        &lt;p class=&quot;pif-eyebrow&quot;&gt;不要交一份概念作业&lt;/p&gt;
+        &lt;h2&gt;汇总：我现在知道什么，下一步只做什么&lt;/h2&gt;
+        &lt;p class=&quot;pif-question&quot;&gt;这部分才是练习册的交付物。十领域里的记录可以不完整，但下面每一栏都应能指导一次具体复核。&lt;/p&gt;
+        &lt;div class=&quot;pif-summary-grid&quot;&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;summary-money&quot;&gt;公司怎样赚钱&lt;/label&gt;&lt;textarea id=&quot;summary-money&quot; data-field=&quot;summary.money&quot; placeholder=&quot;谁为什么付钱，公司扣掉哪些成本后留下钱&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-spending&quot;&gt;哪些项目还在花钱&lt;/label&gt;&lt;textarea id=&quot;summary-spending&quot; data-field=&quot;summary.spending&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-critical&quot;&gt;最不能判断错的三件事&lt;/label&gt;&lt;textarea id=&quot;summary-critical&quot; data-field=&quot;summary.critical&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-known&quot;&gt;已经知道什么&lt;/label&gt;&lt;textarea id=&quot;summary-known&quot; data-field=&quot;summary.known&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-unknown&quot;&gt;仍然不知道什么&lt;/label&gt;&lt;textarea id=&quot;summary-unknown&quot; data-field=&quot;summary.unknown&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;summary-next&quot; data-field=&quot;summary.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-change&quot;&gt;什么事实出现后必须修改判断&lt;/label&gt;&lt;textarea id=&quot;summary-change&quot; data-field=&quot;summary.change&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-price&quot;&gt;按现价，公司以后大概要做到什么&lt;/label&gt;&lt;textarea id=&quot;summary-price&quot; data-field=&quot;summary.price&quot; placeholder=&quot;只写大致规模、利润和时间，不假装只有唯一答案&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-action&quot;&gt;现在的结论&lt;/label&gt;&lt;select id=&quot;summary-action&quot; data-field=&quot;summary.action&quot;&gt;&lt;option value=&quot;&quot;&gt;请选择&lt;/option&gt;&lt;option&gt;直接放弃&lt;/option&gt;&lt;option&gt;信息不足，先核实&lt;/option&gt;&lt;option&gt;值得继续研究&lt;/option&gt;&lt;option&gt;维持原判断，等下一项事实&lt;/option&gt;&lt;option&gt;只做模拟记录，不投入资金&lt;/option&gt;&lt;option&gt;降低风险&lt;/option&gt;&lt;option&gt;退出原判断&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-review&quot;&gt;下次复查日期&lt;/label&gt;&lt;input id=&quot;summary-review&quot; type=&quot;date&quot; data-field=&quot;summary.reviewDate&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h3 style=&quot;margin-top:22px&quot;&gt;自动整理的研究摘要&lt;/h3&gt;
+        &lt;pre class=&quot;pif-summary-preview&quot; data-summary-preview&gt;开始填写后，这里会自动生成一份可复制的摘要。&lt;/pre&gt;
+        &lt;div class=&quot;pif-summary-actions&quot;&gt;&lt;button class=&quot;pif-button pif-button-primary&quot; type=&quot;button&quot; data-copy-summary&gt;复制摘要&lt;/button&gt;&lt;button class=&quot;pif-button&quot; type=&quot;button&quot; data-print&gt;打印 / 保存为电子文档（PDF）&lt;/button&gt;&lt;/div&gt;
+        &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;最后四问：&lt;/strong&gt;遮住领域标题，我能否说出每部分想查什么？给我一条新闻，我能否指出它改变了哪个事实？我能否举出看似利好、其实不能证明结论的反例？我能否说出下一步查哪份资料，而不是只写“继续观察”？&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;footer class=&quot;pif-footer&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;本地保存说明：&lt;/strong&gt;自动保存只发生在当前浏览器的本地存储中，不会上传到网络。清理浏览器数据可能丢失记录，请定期使用“导出记录”保存备份文件。&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;研究边界：&lt;/strong&gt;本练习册用于练习组织事实和修改判断，不提供个股推荐、目标价或收益承诺。&lt;/p&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    (function () {
+      &quot;use strict&quot;;
+      var root = document.getElementById(&quot;pm-investment-practice&quot;);
+      if (!root) return;
+
+      var storageKey = &quot;pm-investment-practice:v1&quot;;
+      var fields = Array.prototype.slice.call(root.querySelectorAll(&quot;[data-field]&quot;));
+      var status = root.querySelector(&quot;[data-status]&quot;);
+      var preview = root.querySelector(&quot;[data-summary-preview]&quot;);
+      var saveTimer = null;
+      var storageAvailable = true;
+
+      function setStatus(message) {
+        if (status) status.textContent = message;
+      }
+
+      function valuesFromForm() {
+        var values = {};
+        fields.forEach(function (field) { values[field.getAttribute(&quot;data-field&quot;)] = field.value; });
+        return values;
+      }
+
+      function applyValues(values) {
+        if (!values || typeof values !== &quot;object&quot;) return;
+        fields.forEach(function (field) {
+          var key = field.getAttribute(&quot;data-field&quot;);
+          if (Object.prototype.hasOwnProperty.call(values, key)) field.value = String(values[key] == null ? &quot;&quot; : values[key]);
+        });
+        renderSummary();
+      }
+
+      function makeRecord() {
+        return { version: 1, updatedAt: new Date().toISOString(), values: valuesFromForm() };
+      }
+
+      function save() {
+        renderSummary();
+        if (!storageAvailable) return;
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(makeRecord()));
+          setStatus(&quot;已自动保存在本机 · &quot; + new Date().toLocaleTimeString([], { hour: &quot;2-digit&quot;, minute: &quot;2-digit&quot; }));
+        } catch (error) {
+          storageAvailable = false;
+          setStatus(&quot;浏览器不允许本地保存，请用“导出记录”备份。 &quot;);
+        }
+      }
+
+      function scheduleSave() {
+        if (saveTimer) window.clearTimeout(saveTimer);
+        saveTimer = window.setTimeout(save, 250);
+      }
+
+      function value(key) {
+        var field = root.querySelector(&#x27;[data-field=&quot;&#x27; + key + &#x27;&quot;]&#x27;);
+        return field &amp;&amp; field.value.trim() ? field.value.trim() : &quot;不知道&quot;;
+      }
+
+      function renderSummary() {
+        if (!preview) return;
+        var lines = [
+          &quot;# &quot; + value(&quot;meta.company&quot;) + &quot;（&quot; + value(&quot;meta.ticker&quot;) + &quot;）研究摘要&quot;,
+          &quot;资料截止：&quot; + value(&quot;meta.cutoffDate&quot;),
+          &quot;&quot;,
+          &quot;公司怎样赚钱：\n&quot; + value(&quot;summary.money&quot;),
+          &quot;&quot;,
+          &quot;仍在花钱的项目：\n&quot; + value(&quot;summary.spending&quot;),
+          &quot;&quot;,
+          &quot;最不能判断错的三件事：\n&quot; + value(&quot;summary.critical&quot;),
+          &quot;&quot;,
+          &quot;已经知道：\n&quot; + value(&quot;summary.known&quot;),
+          &quot;&quot;,
+          &quot;仍然不知道：\n&quot; + value(&quot;summary.unknown&quot;),
+          &quot;&quot;,
+          &quot;现价大约要求公司做到：\n&quot; + value(&quot;summary.price&quot;),
+          &quot;&quot;,
+          &quot;什么会迫使我修改判断：\n&quot; + value(&quot;summary.change&quot;),
+          &quot;&quot;,
+          &quot;下一步只查：\n&quot; + value(&quot;summary.next&quot;),
+          &quot;&quot;,
+          &quot;当前结论：&quot; + value(&quot;summary.action&quot;),
+          &quot;下次复查：&quot; + value(&quot;summary.reviewDate&quot;)
+        ];
+        preview.textContent = lines.join(&quot;\n&quot;);
+      }
+
+      function safeName(text) {
+        return (text || &quot;未命名公司&quot;).replace(/[\\/:*?\&quot;&lt;&gt;|\s]+/g, &quot;-&quot;).replace(/^-+|-+$/g, &quot;&quot;) || &quot;未命名公司&quot;;
+      }
+
+      function localDateStamp(date) {
+        function twoDigits(number) { return String(number).padStart(2, &quot;0&quot;); }
+        return date.getFullYear() + &quot;-&quot; + twoDigits(date.getMonth() + 1) + &quot;-&quot; + twoDigits(date.getDate());
+      }
+
+      function exportRecord() {
+        var record = makeRecord();
+        var blob = new Blob([JSON.stringify(record, null, 2)], { type: &quot;application/json;charset=utf-8&quot; });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement(&quot;a&quot;);
+        link.href = url;
+        link.download = safeName(value(&quot;meta.company&quot;)) + &quot;-投资研究-&quot; + localDateStamp(new Date()) + &quot;.json&quot;;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(function () { URL.revokeObjectURL(url); }, 0);
+        setStatus(&quot;记录已导出为数据备份文件。 &quot;);
+      }
+
+      function importRecord(file) {
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function () {
+          try {
+            var record = JSON.parse(String(reader.result));
+            if (!record || record.version !== 1 || !record.values || typeof record.values !== &quot;object&quot;) throw new Error(&quot;格式不受支持&quot;);
+            applyValues(record.values);
+            save();
+            setStatus(&quot;记录已导入并保存在本机。 &quot;);
+          } catch (error) {
+            setStatus(&quot;导入失败：请选择由本练习册导出的数据备份文件。 &quot;);
+          }
+        };
+        reader.onerror = function () { setStatus(&quot;文件读取失败，请重试。 &quot;); };
+        reader.readAsText(file, &quot;utf-8&quot;);
+      }
+
+      function copySummary() {
+        var text = preview ? preview.textContent : &quot;&quot;;
+        if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { setStatus(&quot;研究摘要已复制。 &quot;); }, fallbackCopy);
+        } else {
+          fallbackCopy();
+        }
+        function fallbackCopy() {
+          var area = document.createElement(&quot;textarea&quot;);
+          area.value = text;
+          area.setAttribute(&quot;readonly&quot;, &quot;&quot;);
+          area.style.position = &quot;fixed&quot;;
+          area.style.opacity = &quot;0&quot;;
+          document.body.appendChild(area);
+          area.select();
+          try { document.execCommand(&quot;copy&quot;); setStatus(&quot;研究摘要已复制。 &quot;); }
+          catch (error) { setStatus(&quot;无法自动复制，请手动选择摘要。 &quot;); }
+          area.remove();
+        }
+      }
+
+      try {
+        var raw = localStorage.getItem(storageKey);
+        if (raw) {
+          var stored = JSON.parse(raw);
+          if (stored &amp;&amp; stored.version === 1) applyValues(stored.values);
+          setStatus(&quot;已读取本机上次记录。 &quot;);
+        } else {
+          renderSummary();
+          setStatus(&quot;尚无本机记录；开始输入后会自动保存。 &quot;);
+        }
+      } catch (error) {
+        storageAvailable = false;
+        renderSummary();
+        setStatus(&quot;浏览器不允许读取本地记录，请用导入 / 导出备份。 &quot;);
+      }
+
+      fields.forEach(function (field) {
+        field.addEventListener(&quot;input&quot;, scheduleSave);
+        field.addEventListener(&quot;change&quot;, scheduleSave);
+      });
+      Array.prototype.slice.call(root.querySelectorAll(&quot;[data-print]&quot;)).forEach(function (button) { button.addEventListener(&quot;click&quot;, function () { window.print(); }); });
+      var exportButton = root.querySelector(&quot;[data-export]&quot;);
+      if (exportButton) exportButton.addEventListener(&quot;click&quot;, exportRecord);
+      var importButton = root.querySelector(&quot;[data-import-button]&quot;);
+      var importFile = root.querySelector(&quot;[data-import-file]&quot;);
+      if (importButton &amp;&amp; importFile) importButton.addEventListener(&quot;click&quot;, function () { importFile.click(); });
+      if (importFile) importFile.addEventListener(&quot;change&quot;, function () { importRecord(importFile.files &amp;&amp; importFile.files[0]); importFile.value = &quot;&quot;; });
+      var copyButton = root.querySelector(&quot;[data-copy-summary]&quot;);
+      if (copyButton) copyButton.addEventListener(&quot;click&quot;, copySummary);
+      var resetButton = root.querySelector(&quot;[data-reset]&quot;);
+      if (resetButton) resetButton.addEventListener(&quot;click&quot;, function () {
+        if (!window.confirm(&quot;确定清空这台浏览器里的全部练习记录吗？请先导出需要保留的内容。&quot;)) return;
+        fields.forEach(function (field) { field.value = &quot;&quot;; });
+        try { localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; }
+        renderSummary();
+        setStatus(&quot;本机练习记录已清空。 &quot;);
+      });
+
+      var links = Array.prototype.slice.call(root.querySelectorAll(&quot;a[href^=&#x27;#&#x27;]&quot;));
+      links.forEach(function (link) {
+        link.addEventListener(&quot;click&quot;, function (event) {
+          var target = root.querySelector(link.getAttribute(&quot;href&quot;));
+          if (!target) return;
+          event.preventDefault();
+          var reduced = window.matchMedia &amp;&amp; window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches;
+          target.scrollIntoView({ behavior: reduced ? &quot;auto&quot; : &quot;smooth&quot;, block: &quot;start&quot; });
+        });
+      });
+      var navLinks = Array.prototype.slice.call(root.querySelectorAll(&quot;[data-nav]&quot;));
+      if (navLinks.length &amp;&amp; &quot;IntersectionObserver&quot; in window) {
+        var map = {};
+        navLinks.forEach(function (link) { map[link.getAttribute(&quot;href&quot;).slice(1)] = link; });
+        var observer = new IntersectionObserver(function (entries) {
+          var visible = entries.filter(function (entry) { return entry.isIntersecting; });
+          if (!visible.length) return;
+          visible.sort(function (a, b) { return Math.abs(a.boundingClientRect.top) - Math.abs(b.boundingClientRect.top); });
+          navLinks.forEach(function (link) { link.removeAttribute(&quot;aria-current&quot;); });
+          var active = map[visible[0].target.id];
+          if (active) active.setAttribute(&quot;aria-current&quot;, &quot;location&quot;);
+        }, { rootMargin: &quot;-8% 0px -76% 0px&quot;, threshold: [0, .01] });
+        Array.prototype.slice.call(root.querySelectorAll(&quot;[data-practice-section]&quot;)).forEach(function (section) { observer.observe(section); });
+      }
+    }());
+  &lt;/script&gt;
+&lt;/main&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>
