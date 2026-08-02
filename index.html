@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>公司项目群投资研究工作台</title>
+<title>公司项目群投资研究工作台（评审改进版）</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-same-origin allow-downloads" referrerpolicy="no-referrer" title="公司项目群投资研究工作台" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts allow-same-origin allow-downloads allow-modals" referrerpolicy="no-referrer" title="公司项目群投资研究工作台（评审改进版）" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;公司项目群投资研究工作台&lt;/title&gt;
+&lt;title&gt;公司项目群投资研究工作台（评审改进版）&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -1057,7 +1057,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     #company-investment-framework .cif-gates li::before { display: block; color: var(--cif-accent); font-size: .7rem; font-weight: 850; letter-spacing: .1em; content: &quot;检查 0&quot; counter(gate); }
     #company-investment-framework .cif-gates strong { display: block; margin: 5px 0; }
     #company-investment-framework .cif-gates span { display: block; color: var(--cif-muted); font-size: .82rem; line-height: 1.48; }
-    #company-investment-framework .cif-decision-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin: 18px 0; }
+    #company-investment-framework .cif-decision-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 18px 0; }
     #company-investment-framework .cif-decision-row span { padding: 12px 8px; border: 1px solid var(--cif-line); border-radius: 999px; background: var(--cif-surface); text-align: center; font-size: .8rem; font-weight: 760; }
     #company-investment-framework .cif-footer { padding: 34px 0 12px; color: var(--cif-muted); font-size: .82rem; }
     #company-investment-framework .cif-footer p { margin-bottom: 6px; }
@@ -1156,7 +1156,9 @@ html&gt;body{padding:0}&lt;/style&gt;
       &lt;nav class=&quot;cif-aux-nav&quot; aria-label=&quot;页面辅助目录&quot;&gt;
         &lt;ul class=&quot;cif-nav-list&quot;&gt;
           &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#overview&quot;&gt;先从哪里开始&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#p0-questions&quot;&gt;Tesla 四个关键问题&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#p0-questions&quot;&gt;怎样选最关键的问题&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#answer-quality&quot;&gt;怎样才算查清楚&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#worked-example&quot;&gt;一份完整作业&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#one-event&quot;&gt;同一事件怎样检查&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#operating-system&quot;&gt;新消息怎样更新判断&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a class=&quot;cif-nav-link&quot; href=&quot;#valuation-layer&quot;&gt;公司不错，股票贵不贵&lt;/a&gt;&lt;/li&gt;
@@ -1170,15 +1172,15 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;div class=&quot;cif-content&quot;&gt;
       &lt;div class=&quot;cif-reading&quot;&gt;
         &lt;header class=&quot;cif-hero&quot; id=&quot;overview&quot;&gt;
-          &lt;p class=&quot;cif-eyebrow&quot;&gt;用项目管理检查一家公司&lt;/p&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;用项目管理检查一家公司 · 从 P0 到复查&lt;/p&gt;
           &lt;h1&gt;公司投资研究工作台&lt;/h1&gt;
           &lt;p class=&quot;cif-lead&quot;&gt;买股票之前，先搞清楚三件事：公司现在靠什么赚钱，它正在花钱做的新事情能不能成功，以及现在的股价是不是已经把成功算进去了。项目管理的十个领域，帮助我们从不同角度检查同一家公司，避免只听故事或只看股价。&lt;/p&gt;
           &lt;p class=&quot;cif-boundary&quot;&gt;&lt;strong&gt;先把对象分开&lt;/strong&gt;&lt;span&gt;十个领域检查公司。&lt;/span&gt;&lt;span&gt;估值部分检查股价。&lt;/span&gt;&lt;span&gt;执行部分限制自己可能承受的损失。&lt;/span&gt;&lt;span&gt;公司做得好，不等于股票一定便宜。&lt;/span&gt;&lt;/p&gt;
           &lt;ol class=&quot;cif-steps&quot; aria-label=&quot;四个使用步骤&quot;&gt;
-            &lt;li&gt;&lt;strong&gt;先看公司怎样赚钱&lt;/strong&gt;&lt;span&gt;谁付钱、为什么付钱，公司扣掉成本后留下多少现金。&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;strong&gt;再找最容易出错的地方&lt;/strong&gt;&lt;span&gt;哪件事失败后，原来的投资理由就站不住。&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;strong&gt;用事实检查&lt;/strong&gt;&lt;span&gt;看财报、客户、产品、许可和竞争，不只听公司怎么说。&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;strong&gt;最后看股价和风险&lt;/strong&gt;&lt;span&gt;即使公司不错，现在的价格是否仍值得承担风险。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;30 分钟决定是否继续&lt;/strong&gt;&lt;span&gt;先说清谁付钱、公司怎样留下现金；资料不够也是结果。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;比较后只选一个 P0&lt;/strong&gt;&lt;span&gt;哪个问题判断错后，会破坏赚钱、生存、时间或价值？&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;只填最相关的两个领域&lt;/strong&gt;&lt;span&gt;每个答案留下来源、比较、证伪和下一份资料。&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;新事实出现后留下变化&lt;/strong&gt;&lt;span&gt;记录原判断和新判断，再检查价格与风险是否需要调整。&lt;/span&gt;&lt;/li&gt;
           &lt;/ol&gt;
 
           &lt;div class=&quot;cif-callout&quot;&gt;
@@ -1197,9 +1199,28 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;/header&gt;
 
         &lt;section class=&quot;cif-section&quot; id=&quot;p0-questions&quot; aria-labelledby=&quot;p0-title&quot;&gt;
-          &lt;p class=&quot;cif-eyebrow&quot;&gt;Tesla 贯穿示例&lt;/p&gt;
-          &lt;h2 id=&quot;p0-title&quot;&gt;研究 Tesla 时，最不能判断错的四件事&lt;/h2&gt;
-          &lt;p class=&quot;cif-section-intro&quot;&gt;这些问题一旦判断错了，后面的增长、估值和买卖理由都可能跟着错。项目管理里可以把它们标成最高优先级 P0，但记住意思比记住名字重要。研究其他公司时，问题也必须跟着公司改变。&lt;/p&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;先决定什么最值得查&lt;/p&gt;
+          &lt;h2 id=&quot;p0-title&quot;&gt;十个领域是问题索引，不是十张必须填满的表&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;先列出两到三个可能改变投资结论的问题，再比较“判断错了会造成什么后果”。最先研究的不是新闻最多、听起来最宏大的问题，而是最可能让主要赚钱理由失效的问题。项目管理里可以把它标成最高优先级 P0，名字可以忘，选择理由必须说得清。&lt;/p&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;
+            &lt;h3&gt;比较候选问题时，只问四件事&lt;/h3&gt;
+            &lt;ul&gt;
+              &lt;li&gt;判断错了，会不会让公司主要赚钱理由失效？&lt;/li&gt;
+              &lt;li&gt;会不会让公司在结果出现前先缺钱、失去许可或无法继续？&lt;/li&gt;
+              &lt;li&gt;会不会让原本三年的结果拖成很多年？&lt;/li&gt;
+              &lt;li&gt;会不会让公司价值从一个量级掉到另一个量级？&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p&gt;&lt;strong&gt;不用打分：&lt;/strong&gt;把两个候选问题放在一起，用一句话说明哪个判断错后的损失更大，然后先查它。&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot; style=&quot;margin-bottom:24px&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;同一家公司的候选问题&lt;/th&gt;&lt;th&gt;如果判断错了&lt;/th&gt;&lt;th&gt;先后判断&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;社交平台上的讨论会不会继续增加？&lt;/td&gt;&lt;td&gt;可能影响短期客流，但未必改变每家店能否赚钱。&lt;/td&gt;&lt;td&gt;先记作线索，不列为最先研究。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;新店成熟后，能不能不靠老店补钱而自己留下现金？&lt;/td&gt;&lt;td&gt;如果不能，开店越多可能亏得越多，增长和现价理由都会失效。&lt;/td&gt;&lt;td&gt;先查这一项，把它列为 P0。&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;h3&gt;Tesla 的四个 P0 示例&lt;/h3&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;下面四个问题示范怎样把大故事改写成可以检查的事实，不是要求所有人依次完成的作业。研究其他公司时，问题必须跟着公司的赚钱方式改变。&lt;/p&gt;
           &lt;div class=&quot;cif-p0-grid&quot;&gt;
             &lt;article class=&quot;cif-p0-card&quot;&gt;
               &lt;span class=&quot;cif-priority&quot;&gt;最高优先级（P0）· 范围 / 质量 / 相关方&lt;/span&gt;
@@ -1234,6 +1255,93 @@ html&gt;body{padding:0}&lt;/style&gt;
               &lt;p class=&quot;cif-card-label&quot;&gt;下一步等什么&lt;/p&gt;&lt;p&gt;至少一个可核对的结果：开发更快、成本更低、产品更可靠或少花了重复建设的钱。&lt;/p&gt;
             &lt;/article&gt;
           &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;answer-quality&quot; aria-labelledby=&quot;answer-quality-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;会提问题之后，还要会判断答案&lt;/p&gt;
+          &lt;h2 id=&quot;answer-quality-title&quot;&gt;四种写法，决定研究是在推进还是原地打转&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;“有来源、做比较、能认错、有下一步”不是为了把表格填满，而是为了让别人和未来的自己都能复查。下面只给一张通用标尺，十个领域不再各自重复一套说明。&lt;/p&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;要记录什么&lt;/th&gt;&lt;th&gt;看似回答了，其实没法用&lt;/th&gt;&lt;th&gt;可以继续行动的写法&lt;/th&gt;&lt;th&gt;为什么更好&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;事实来源&lt;/td&gt;&lt;td&gt;“网上看到的”“公司说过”&lt;/td&gt;&lt;td&gt;“某公司 2025 年年报，第 18 页，经营现金流；发布日期 2026-03-15”&lt;/td&gt;&lt;td&gt;别人能找到同一份资料，检查有没有看错。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;比较对象&lt;/td&gt;&lt;td&gt;“增长很快”“比以前好”&lt;/td&gt;&lt;td&gt;“与去年同期、公司原计划和同阶段同行分别比较”&lt;/td&gt;&lt;td&gt;“好坏”有了共同尺子，不再只是感觉。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;什么会证明我错了&lt;/td&gt;&lt;td&gt;“情况变差时再看”&lt;/td&gt;&lt;td&gt;“许可证被暂停，或两个季度后仍需大量人工救场”&lt;/td&gt;&lt;td&gt;事实出现时必须改判断，不能临时换理由。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;下一步&lt;/td&gt;&lt;td&gt;“继续关注”“多看看新闻”&lt;/td&gt;&lt;td&gt;“查下一期财报中的经营现金流和总股数变化”&lt;/td&gt;&lt;td&gt;知道查哪份资料、哪个数字或哪个状态。&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-tools-grid&quot; style=&quot;margin-top:16px&quot;&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;h3&gt;来源不是越多越好，而是越接近事实越好&lt;/h3&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;strong&gt;先找最接近事实的原始资料：&lt;/strong&gt;正式财报和公告、政府许可或处罚、合同状态、产品实际提供的能力、客户已经发生的购买和续费。&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;再用可靠的二手资料交叉核对：&lt;/strong&gt;它可以帮助找到问题，不能替代原文。&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;帖子、长文和翻车视频只当线索：&lt;/strong&gt;它们可以提醒你去查，但没有样本范围和比较口径时，不能证明整体情况。&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;h3&gt;“不知道”怎样写才有用&lt;/h3&gt;
+              &lt;p&gt;不知道不是失败，编一个答案才是失败。合格写法应继续留下调查路径：&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;目前无法确认。&lt;/strong&gt;我查过……；最接近答案的资料是……，但它不能证明……；下一步查……中的……。&lt;/p&gt;
+              &lt;p&gt;如果公开资料始终无法验证，这本身也可能改变你愿意承担的风险。&lt;/p&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;cif-section&quot; id=&quot;worked-example&quot; aria-labelledby=&quot;worked-example-title&quot;&gt;
+          &lt;p class=&quot;cif-eyebrow&quot;&gt;一份从开始到改判断的完整作业&lt;/p&gt;
+          &lt;h2 id=&quot;worked-example-title&quot;&gt;只研究必要部分：青禾面包店（虚构）&lt;/h2&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;前面的面包店只是解释单个概念。这里把同一家简单生意从初筛做到一次复查，示范答案、来源、比较、证伪和下一步怎样接在一起。数字完全虚构，只用于练习方法。&lt;/p&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;已知情况：&lt;/strong&gt;青禾有 4 家成熟门店，扣掉工资、租金、税和维持设备的钱后，一年大约留下 100 万元现金；账上现金 350 万元、没有借款。公司计划三年再开 6 家店，预算 300 万元。把账上现金和借款分开考虑后，市场给现有经营业务的价格是 1,500 万元。&lt;/div&gt;
+
+          &lt;h3&gt;第一步：30 分钟只决定是否值得继续查&lt;/h3&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;查到的事实&lt;/th&gt;&lt;th&gt;暂时结论&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;0—10 分钟&lt;/td&gt;&lt;td&gt;顾客为面包和饮品付钱；4 家成熟店合计一年留下约 100 万元现金。&lt;/td&gt;&lt;td&gt;能说清现有业务怎样赚钱。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;10—20 分钟&lt;/td&gt;&lt;td&gt;现金 350 万元、无借款；扩店预算 300 万元，但日常经营至少要留 100 万元备用。&lt;/td&gt;&lt;td&gt;一次开完 6 家店存在至少 50 万元资金缺口，还没算超支。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;20—30 分钟&lt;/td&gt;&lt;td&gt;1,500 万元价格明显不能只靠现有 100 万元解释，扩店必须带来更多现金。&lt;/td&gt;&lt;td&gt;&lt;strong&gt;值得继续研究，但先核实新店能否自己赚钱。&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+
+          &lt;h3 style=&quot;margin-top:24px&quot;&gt;第二步：从候选问题中选一个 P0&lt;/h3&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;候选问题&lt;/th&gt;&lt;th&gt;判断错了会怎样&lt;/th&gt;&lt;th&gt;处理&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;最近短视频讨论能否继续带来客流？&lt;/td&gt;&lt;td&gt;影响短期销售，但流量消失后仍可依靠附近顾客。&lt;/td&gt;&lt;td&gt;记为线索，暂不优先。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;新店成熟后能否不靠老店补钱，自己留下现金？&lt;/td&gt;&lt;td&gt;如果不能，6 家新店会持续消耗老店现金，增长理由和 1,500 万元买价都会动摇。&lt;/td&gt;&lt;td&gt;&lt;strong&gt;列为 P0，先查。&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+
+          &lt;h3 style=&quot;margin-top:24px&quot;&gt;第三步：只填与 P0 最相关的两个领域&lt;/h3&gt;
+          &lt;div class=&quot;cif-tools-grid&quot;&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;p class=&quot;cif-eyebrow&quot;&gt;成本管理&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;6 家新店预算 300 万元；现金扣除 100 万元经营备用后只剩 250 万元，因此不能在不借钱或压缩备用金的情况下同时开完。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt;扩店预算表、银行余额、过去两家新店的最终结算单。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;比较：&lt;/strong&gt;计划每店 50 万元；过去两家实际分别花了 56 万元和 61 万元。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;什么会证明判断错了：&lt;/strong&gt;已签合同把单店总投入锁在 40 万元以内，并且开店后仍能保留 100 万元备用金。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;下一步：&lt;/strong&gt;查前两家待开门店的租约、设备合同和开业前三个月工资预算。&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class=&quot;cif-card&quot;&gt;
+              &lt;p class=&quot;cif-eyebrow&quot;&gt;质量管理&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;回答：&lt;/strong&gt;最近试开的门店在第六个月，会员复购率为 23%，低于过去成熟门店开业同期的 35%—40%；“有人来过”还不能证明能稳定经营。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt;收银系统中的会员分组记录和退款记录，而不是短视频播放量。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;比较：&lt;/strong&gt;与老店开业后同样六个月的顾客群比较，不拿新店和经营多年的老店直接比较。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;什么会证明判断错了：&lt;/strong&gt;不靠大额促销，连续两个月复购进入过去门店同期范围，并且退款没有上升。&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;下一步：&lt;/strong&gt;查新店最近两个月的同批顾客复购和每单实际留下的钱。&lt;/p&gt;
+            &lt;/article&gt;
+          &lt;/div&gt;
+
+          &lt;h3 style=&quot;margin-top:24px&quot;&gt;第四步：先做估值压力测试，不急着算目标价&lt;/h3&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;当前判断：&lt;/strong&gt;如果一年只能稳定留下 100 万元，1,500 万元相当于约 15 年的当前现金，而且还没考虑等待和失败风险。因此这个价格主要押注扩店成功。只要新店不能独立留下现金，现价理由就会明显变弱。详细的成功一半和失败情景见后面的估值部分。&lt;/div&gt;
+
+          &lt;h3 style=&quot;margin-top:24px&quot;&gt;第五步：新事实出现后，留下判断变化&lt;/h3&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;新事实与来源&lt;/th&gt;&lt;th&gt;影响哪里&lt;/th&gt;&lt;th&gt;原判断&lt;/th&gt;&lt;th&gt;新判断与下一步&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;两家新店经营满六个月后，每家每月仍净流出约 1.5 万元；会员复购 23%。来源：收银记录、银行流水。&lt;/td&gt;&lt;td&gt;成本、质量、进度、估值&lt;/td&gt;&lt;td&gt;三年内连续开完 6 家店，现有现金基本够用。&lt;/td&gt;&lt;td&gt;先停止签后四家门店；扩店成功的证据变弱。下一步查两家新店未来两个月能否停止现金流出，以及问题来自客流、价格还是成本。&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;这份作业为什么没有填十个领域：&lt;/strong&gt;当前 P0 主要由成本和质量决定。事实只记录一次，再标注它影响了哪些领域；领域是观察问题的角度，不是十份要重复抄写的资料库。&lt;/div&gt;
         &lt;/section&gt;
 
         &lt;section class=&quot;cif-section&quot; id=&quot;ten-domains&quot; aria-labelledby=&quot;domains-title&quot;&gt;
@@ -1521,6 +1629,7 @@ html&gt;body{padding:0}&lt;/style&gt;
               &lt;details&gt;&lt;summary&gt;项目通过下一关后做什么&lt;/summary&gt;&lt;div class=&quot;cif-detail-body&quot;&gt;事前写清通过条件。结果出现后，公司可能继续加大投入、保持规模、重新设计、缩小项目或停止。项目管理常把这一步叫阶段关口（Stage-Gate）。&lt;/div&gt;&lt;/details&gt;
             &lt;/div&gt;
           &lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;同一事实只记一次：&lt;/strong&gt;例如供应商停产，可以同时标注采购、进度、成本和风险，但不要把同一条新闻复制十遍。记录重点是它分别改变了哪些问题，以及旧判断为什么需要更新。&lt;/div&gt;
 
           &lt;h3&gt;一份财报至少回答五件事&lt;/h3&gt;
           &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
@@ -1540,7 +1649,7 @@ html&gt;body{padding:0}&lt;/style&gt;
           &lt;p class=&quot;cif-eyebrow&quot;&gt;公司事实之后，才看股票价格&lt;/p&gt;
           &lt;h2 id=&quot;valuation-title&quot;&gt;公司很好，不代表股票现在便宜&lt;/h2&gt;
           &lt;p class=&quot;cif-section-intro&quot;&gt;买股票还要问：按今天这个价格，公司以后要赚到什么程度，我才不会买贵？价格不能唯一告诉我们市场相信什么，只能帮助我们测试几组可能的未来。&lt;/p&gt;
-          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;先用面包店理解：&lt;/strong&gt;一家面包店一年稳定赚 10 万元。有人要用 300 万元卖给你。如果利润永远不增长，你需要 30 年才能靠利润赚回买价。卖家之所以敢要 300 万元，通常是因为他相信以后会开更多店、赚更多钱。估值就是把“价格背后要求公司做到什么”说清楚。&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;先用最粗的一步检查价格：&lt;/strong&gt;把买下整家生意的价格，与它一年真正能留下的现金比较。这个结果不是完整估值，因为还没考虑等待、风险和以后变化；它只负责暴露一个问题——现价是否必须依靠尚未证明的增长才能成立。&lt;/div&gt;
           &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
             &lt;thead&gt;&lt;tr&gt;&lt;th&gt;要回答的问题&lt;/th&gt;&lt;th&gt;必须写清楚什么&lt;/th&gt;&lt;th&gt;不合格的回答&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
             &lt;tbody&gt;
@@ -1551,6 +1660,19 @@ html&gt;body{padding:0}&lt;/style&gt;
               &lt;tr&gt;&lt;td&gt;自己究竟不同意市场哪一点？&lt;/td&gt;&lt;td&gt;一个具体的规模、利润、时间或成功判断，以及证据&lt;/td&gt;&lt;td&gt;“公司很好、空间很大”&lt;/td&gt;&lt;/tr&gt;
             &lt;/tbody&gt;
           &lt;/table&gt;&lt;/div&gt;
+
+          &lt;h3 style=&quot;margin-top:24px&quot;&gt;继续算青禾面包：价格到底押了什么&lt;/h3&gt;
+          &lt;p&gt;青禾现有经营业务的价格是 1,500 万元，4 家店一年大约留下 100 万元，扩店计划还要投入 300 万元。下面不是预测哪种一定发生，而是看不同结果下，这个价格需要多强的未来。&lt;/p&gt;
+          &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th&gt;情景&lt;/th&gt;&lt;th&gt;三年后可能是什么样&lt;/th&gt;&lt;th&gt;对 1,500 万元价格的检查&lt;/th&gt;&lt;th&gt;现在必须查什么&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;td&gt;不扩张&lt;/td&gt;&lt;td&gt;仍是 4 家店，一年留下约 100 万元。&lt;/td&gt;&lt;td&gt;约等于 15 年当前现金，还没扣等待和风险；仅靠现有业务显得贵。&lt;/td&gt;&lt;td&gt;现有 100 万元能否稳定，而不是某一年碰巧较高。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;只成功一半&lt;/td&gt;&lt;td&gt;投入接近 300 万元，只有 7 家店稳定经营，一年留下约 140 万元。&lt;/td&gt;&lt;td&gt;投入和等待都增加了，现金改善却有限；价格仍要求以后继续变好。&lt;/td&gt;&lt;td&gt;为什么新店每家留下的钱低于老店，问题能否修复。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;扩张成功&lt;/td&gt;&lt;td&gt;三年后有 10 家稳定门店，一年留下约 250 万元。&lt;/td&gt;&lt;td&gt;价格约等于那时 6 年的现金，开始比较容易解释，但要承担三年等待、300 万元投入和执行风险。&lt;/td&gt;&lt;td&gt;新店复购、单店现金和开店成本能否重复，而不是只有一家样板店成功。&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;扩张失败&lt;/td&gt;&lt;td&gt;花掉 300 万元后仍只有原来的店赚钱，管理负担让一年现金降到约 80 万元。&lt;/td&gt;&lt;td&gt;现价失去主要支撑，且公司缓冲变少。&lt;/td&gt;&lt;td&gt;什么条件出现时会停止后续开店，避免继续投入。&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;怎样迁移到股票：&lt;/strong&gt;先看公司当前总市值，再把真正多余的现金和必须偿还的债务分开考虑；维持日常经营必需的现金不能假装全部多余。然后把“一年留下的钱”换成你能解释清楚的股东现金，列出不增长、部分成功、成功和失败四种情景。不要套固定倍数；先说清价格必须依靠哪件尚未证明的事。&lt;/div&gt;
 
           &lt;h3&gt;业务越成熟，证据要求越高&lt;/h3&gt;
           &lt;div class=&quot;cif-ladder&quot; aria-label=&quot;业务成熟后的证据要求&quot;&gt;
@@ -1590,7 +1712,7 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;section class=&quot;cif-section&quot; id=&quot;quick-screen&quot; aria-labelledby=&quot;screen-title&quot;&gt;
           &lt;p class=&quot;cif-eyebrow&quot;&gt;真正可执行的研究入口&lt;/p&gt;
           &lt;h2 id=&quot;screen-title&quot;&gt;30 分钟只回答：要不要继续花时间？&lt;/h2&gt;
-          &lt;p class=&quot;cif-section-intro&quot;&gt;30 分钟足够发现明显问题，不足以完成专业估值和仓位决定。缺数据就写“不知道”，不要为了填满表格猜数字。&lt;/p&gt;
+          &lt;p class=&quot;cif-section-intro&quot;&gt;30 分钟足够发现明显问题，不足以完成专业估值和仓位决定。缺数据就写“不知道”，不要为了填满表格猜数字。找不到财报或关键资料，不表示初筛失败；“信息不足，先核实”本来就是合格结果。&lt;/p&gt;
           &lt;div class=&quot;cif-matrix-wrap&quot;&gt;&lt;table class=&quot;cif-table&quot;&gt;
             &lt;thead&gt;&lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;只做什么&lt;/th&gt;&lt;th&gt;最小结果&lt;/th&gt;&lt;th&gt;可以停止的情况&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
             &lt;tbody&gt;
@@ -1600,7 +1722,7 @@ html&gt;body{padding:0}&lt;/style&gt;
             &lt;/tbody&gt;
           &lt;/table&gt;&lt;/div&gt;
           &lt;div class=&quot;cif-decision-row&quot; aria-label=&quot;初筛三种结果&quot;&gt;&lt;span&gt;直接放弃&lt;/span&gt;&lt;span&gt;信息不足，先核实&lt;/span&gt;&lt;span&gt;值得继续研究&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;继续研究后的第一份作业：&lt;/strong&gt;连续整理 8—12 个季度的六组财务数字，列出赚钱业务和花钱项目，写下三个最不能判断错的问题、五条具体风险，以及现价要求公司大致做到什么。&lt;/div&gt;
+          &lt;div class=&quot;cif-callout&quot;&gt;&lt;strong&gt;继续研究后的第一份作业：&lt;/strong&gt;先选一个 P0，只填写与它最相关的两个领域。每个答案都留下原始来源、比较对象、什么会证明自己错了，以及下一份要查的资料。把这一件事查清后，再决定是否需要更多领域和更长历史，不要一开始就制造一份大而全的报告。&lt;/div&gt;
         &lt;/section&gt;
 
         &lt;footer class=&quot;cif-footer&quot;&gt;
