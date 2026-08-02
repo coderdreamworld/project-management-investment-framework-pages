@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>项目管理投资框架练习册</title>
+<title>项目管理投资框架练习册（带复查记录）</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-same-origin allow-downloads" referrerpolicy="no-referrer" title="项目管理投资框架练习册" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts allow-same-origin allow-downloads allow-modals" referrerpolicy="no-referrer" title="项目管理投资框架练习册（带复查记录）" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;项目管理投资框架练习册&lt;/title&gt;
+&lt;title&gt;项目管理投资框架练习册（带复查记录）&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -962,11 +962,29 @@ html&gt;body{padding:0}&lt;/style&gt;
     #pm-investment-practice input:focus,
     #pm-investment-practice textarea:focus,
     #pm-investment-practice select:focus { outline: 3px solid rgba(25, 109, 100, .18); border-color: var(--pif-accent); }
-    #pm-investment-practice .pif-self-check { margin: 16px 0 0; padding: 13px 15px; border-radius: 10px; background: var(--pif-warn-soft); color: #6e3827; font-size: .82rem; }
+    #pm-investment-practice .pif-self-check { margin: 16px 0 0; padding: 13px 15px; border-radius: 10px; background: var(--pif-warn-soft); color: var(--pif-warn); font-size: .82rem; }
+    #pm-investment-practice .pif-table-wrap { max-width: 100%; margin-top: 18px; overflow-x: auto; border: 1px solid var(--pif-line); border-radius: 12px; }
+    #pm-investment-practice .pif-table { width: 100%; min-width: 680px; border-collapse: collapse; background: var(--pif-surface); font-size: .84rem; }
+    #pm-investment-practice .pif-table th,
+    #pm-investment-practice .pif-table td { padding: 11px 13px; border-bottom: 1px solid var(--pif-line); text-align: left; vertical-align: top; }
+    #pm-investment-practice .pif-table th { background: var(--pif-soft); color: var(--pif-muted); font-size: .76rem; }
+    #pm-investment-practice .pif-table tr:last-child td { border-bottom: 0; }
     #pm-investment-practice .pif-summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; margin-top: 20px; }
     #pm-investment-practice .pif-summary-preview { min-height: 320px; margin: 18px 0 10px; padding: 18px; overflow: auto; border: 1px solid var(--pif-line); border-radius: 12px; background: #172321; color: #edf4f1; white-space: pre-wrap; font: .84rem/1.65 ui-monospace, SFMono-Regular, Menlo, monospace; }
     #pm-investment-practice .pif-summary-actions { display: flex; gap: 9px; }
     #pm-investment-practice .pif-summary-actions .pif-button { width: auto; }
+    #pm-investment-practice .pif-review-list { display: grid; gap: 12px; margin-top: 18px; }
+    #pm-investment-practice .pif-review-empty { padding: 18px; border: 1px dashed var(--pif-line); border-radius: 12px; color: var(--pif-muted); text-align: center; }
+    #pm-investment-practice .pif-review-card { padding: 18px; border: 1px solid var(--pif-line); border-left: 4px solid var(--pif-accent); border-radius: 12px; background: var(--pif-surface); }
+    #pm-investment-practice .pif-review-head { display: flex; gap: 12px; align-items: start; justify-content: space-between; margin-bottom: 12px; }
+    #pm-investment-practice .pif-review-head h3 { font-size: 1rem; }
+    #pm-investment-practice .pif-review-head p { margin: 3px 0 0; color: var(--pif-muted); font-size: .78rem; }
+    #pm-investment-practice .pif-review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+    #pm-investment-practice .pif-review-item { min-width: 0; }
+    #pm-investment-practice .pif-review-item-wide { grid-column: 1 / -1; }
+    #pm-investment-practice .pif-review-item strong { display: block; margin-bottom: 2px; color: var(--pif-muted); font-size: .72rem; letter-spacing: .04em; }
+    #pm-investment-practice .pif-review-item span { white-space: pre-wrap; }
+    #pm-investment-practice .pif-button-compact { width: auto; flex: 0 0 auto; padding: 6px 9px; color: var(--pif-warn); font-size: .75rem; }
     #pm-investment-practice .pif-footer { padding: 25px 6px 0; color: var(--pif-muted); font-size: .8rem; }
     @media (prefers-color-scheme: dark) {
       #pm-investment-practice { --pif-bg: #141a19; --pif-surface: #1c2422; --pif-soft: #242d2b; --pif-ink: #eef3f0; --pif-muted: #b4bfbb; --pif-line: #3a4643; --pif-accent: #83c8be; --pif-accent-soft: #203b37; --pif-warn: #e3a58d; --pif-warn-soft: #472f27; --pif-blue-soft: #223642; }
@@ -988,8 +1006,10 @@ html&gt;body{padding:0}&lt;/style&gt;
       #pm-investment-practice .pif-basics,
       #pm-investment-practice .pif-example-grid,
       #pm-investment-practice .pif-form-grid,
-      #pm-investment-practice .pif-summary-grid { grid-template-columns: 1fr; }
+      #pm-investment-practice .pif-summary-grid,
+      #pm-investment-practice .pif-review-grid { grid-template-columns: 1fr; }
       #pm-investment-practice .pif-field-wide { grid-column: auto; }
+      #pm-investment-practice .pif-review-item-wide { grid-column: auto; }
       #pm-investment-practice .pif-section-head { grid-template-columns: 40px minmax(0, 1fr); }
       #pm-investment-practice .pif-number { width: 40px; height: 40px; }
     }
@@ -997,7 +1017,9 @@ html&gt;body{padding:0}&lt;/style&gt;
       #pm-investment-practice { background: #fff; color: #111; }
       #pm-investment-practice .pif-shell { display: block; max-width: none; padding: 0; }
       #pm-investment-practice .pif-sidebar,
-      #pm-investment-practice .pif-summary-actions { display: none; }
+      #pm-investment-practice .pif-summary-actions,
+      #pm-investment-practice .pif-review-form,
+      #pm-investment-practice .pif-button-compact { display: none; }
       #pm-investment-practice .pif-hero,
       #pm-investment-practice .pif-section { break-inside: avoid; margin: 0 0 15px; box-shadow: none; }
       #pm-investment-practice input,
@@ -1021,7 +1043,12 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;a href=&quot;#practice-risk&quot; data-nav&gt;08 风险管理&lt;/a&gt;
         &lt;a href=&quot;#practice-procurement&quot; data-nav&gt;09 采购管理&lt;/a&gt;
         &lt;a href=&quot;#practice-stakeholder&quot; data-nav&gt;10 相关方管理&lt;/a&gt;
+      &lt;/nav&gt;
+      &lt;p&gt;填写与复查&lt;/p&gt;
+      &lt;nav class=&quot;pif-nav&quot; aria-label=&quot;填写与复查目录&quot;&gt;
+        &lt;a href=&quot;#practice-quality-guide&quot; data-nav&gt;答案质量标尺&lt;/a&gt;
         &lt;a href=&quot;#practice-summary&quot; data-nav&gt;汇总与下一步&lt;/a&gt;
+        &lt;a href=&quot;#practice-reviews&quot; data-nav&gt;判断复查记录&lt;/a&gt;
       &lt;/nav&gt;
       &lt;div class=&quot;pif-toolbar&quot;&gt;
         &lt;button class=&quot;pif-button pif-button-primary&quot; type=&quot;button&quot; data-export&gt;导出记录&lt;/button&gt;
@@ -1038,13 +1065,29 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;p class=&quot;pif-eyebrow&quot;&gt;先写不知道，再去查事实&lt;/p&gt;
         &lt;h1&gt;把十个项目管理领域，真的用在一家公司上&lt;/h1&gt;
         &lt;p class=&quot;pif-lead&quot;&gt;每一栏都允许写“不知道”。练习的目标不是一次填满，而是把事实、比较、反例和下一步分开。输入会自动保存在当前浏览器，也可以导出成文件备份。&lt;/p&gt;
-        &lt;div class=&quot;pif-callout&quot;&gt;&lt;strong&gt;推荐用法：&lt;/strong&gt;第一次只做 30 分钟初筛，写清公司怎样赚钱和最不能判断错的一件事。决定继续研究后，再按问题需要填写十领域，不要为了完整而平均用力。&lt;/div&gt;
+        &lt;div class=&quot;pif-callout&quot;&gt;&lt;strong&gt;推荐用法：&lt;/strong&gt;第一次只做 30 分钟初筛。列出最多三个候选问题，比较哪一个判断错后会让主要赚钱理由失效、公司撑不到结果、时间大幅推迟或价值掉一个量级。先选出一个 P0，再只填与它最相关的两个领域。&lt;/div&gt;
         &lt;div class=&quot;pif-basics&quot;&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-company&quot;&gt;研究的公司&lt;/label&gt;&lt;input id=&quot;practice-company&quot; data-field=&quot;meta.company&quot; placeholder=&quot;例如：Tesla&quot;&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-ticker&quot;&gt;股票代码&lt;/label&gt;&lt;input id=&quot;practice-ticker&quot; data-field=&quot;meta.ticker&quot; placeholder=&quot;例如：TSLA&quot;&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;practice-date&quot;&gt;资料截止日期&lt;/label&gt;&lt;input id=&quot;practice-date&quot; type=&quot;date&quot; data-field=&quot;meta.cutoffDate&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/header&gt;
+
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-quality-guide&quot; data-practice-section&gt;
+        &lt;p class=&quot;pif-eyebrow&quot;&gt;填写前先看这一张表&lt;/p&gt;
+        &lt;h2&gt;好答案能被复查，空话只能让表格看起来完整&lt;/h2&gt;
+        &lt;p class=&quot;pif-question&quot;&gt;十个领域都使用同一把尺子，不在每个输入框旁重复增加说明。&lt;/p&gt;
+        &lt;div class=&quot;pif-table-wrap&quot;&gt;&lt;table class=&quot;pif-table&quot;&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;字段&lt;/th&gt;&lt;th&gt;不合格&lt;/th&gt;&lt;th&gt;合格方向&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;来源&lt;/td&gt;&lt;td&gt;“网上看到的”&lt;/td&gt;&lt;td&gt;可回查的原始文件、发布日期和具体位置；二手文章只用来找线索。&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;比较&lt;/td&gt;&lt;td&gt;“增长很好”&lt;/td&gt;&lt;td&gt;说明与哪个时期、原计划、同行或替代方案比较，以及为什么可比。&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;证明我错&lt;/td&gt;&lt;td&gt;“情况变差时再看”&lt;/td&gt;&lt;td&gt;写出能观察到的事件、状态，或在数据可靠时写有依据的阈值。&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;下一步&lt;/td&gt;&lt;td&gt;“继续关注”&lt;/td&gt;&lt;td&gt;写清查哪份原始资料中的哪个数字、状态或事件。&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;&lt;/div&gt;
+        &lt;div class=&quot;pif-callout&quot;&gt;&lt;strong&gt;查不到时这样写：&lt;/strong&gt;目前无法确认。我查过……；最接近答案的资料是……，但它不能证明……；下一步查……中的……。找不到资料本身可以得到“信息不足，先核实”，不要降级到帖子或视频来凑答案。&lt;/div&gt;
+      &lt;/section&gt;
 
       &lt;section class=&quot;pif-section&quot; id=&quot;practice-integration&quot; data-practice-section&gt;
         &lt;div class=&quot;pif-section-head&quot;&gt;&lt;span class=&quot;pif-number&quot;&gt;01&lt;/span&gt;&lt;div&gt;&lt;h2&gt;整合管理&lt;/h2&gt;&lt;p class=&quot;pif-question&quot;&gt;这些业务在互相帮助，还是互相抢钱、抢人、拖慢进度？&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1183,9 +1226,10 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;div class=&quot;pif-summary-grid&quot;&gt;
           &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;summary-money&quot;&gt;公司怎样赚钱&lt;/label&gt;&lt;textarea id=&quot;summary-money&quot; data-field=&quot;summary.money&quot; placeholder=&quot;谁为什么付钱，公司扣掉哪些成本后留下钱&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-spending&quot;&gt;哪些项目还在花钱&lt;/label&gt;&lt;textarea id=&quot;summary-spending&quot; data-field=&quot;summary.spending&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
-          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-critical&quot;&gt;最不能判断错的三件事&lt;/label&gt;&lt;textarea id=&quot;summary-critical&quot; data-field=&quot;summary.critical&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-critical&quot;&gt;候选关键问题（最多三个）&lt;/label&gt;&lt;textarea id=&quot;summary-critical&quot; data-field=&quot;summary.critical&quot; placeholder=&quot;先列候选，不要因为新闻热度直接选&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-p0&quot;&gt;最先研究哪一个，为什么&lt;/label&gt;&lt;textarea id=&quot;summary-p0&quot; data-field=&quot;summary.p0&quot; placeholder=&quot;写清判断错后会破坏赚钱、生存、时间或价值中的哪一项&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-known&quot;&gt;已经知道什么&lt;/label&gt;&lt;textarea id=&quot;summary-known&quot; data-field=&quot;summary.known&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
-          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-unknown&quot;&gt;仍然不知道什么&lt;/label&gt;&lt;textarea id=&quot;summary-unknown&quot; data-field=&quot;summary.unknown&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-unknown&quot;&gt;仍然不知道什么&lt;/label&gt;&lt;textarea id=&quot;summary-unknown&quot; data-field=&quot;summary.unknown&quot; placeholder=&quot;写明查过哪里、为什么仍无法确认&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-next&quot;&gt;下一步只查什么&lt;/label&gt;&lt;textarea id=&quot;summary-next&quot; data-field=&quot;summary.next&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-change&quot;&gt;什么事实出现后必须修改判断&lt;/label&gt;&lt;textarea id=&quot;summary-change&quot; data-field=&quot;summary.change&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
           &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;summary-price&quot;&gt;按现价，公司以后大概要做到什么&lt;/label&gt;&lt;textarea id=&quot;summary-price&quot; data-field=&quot;summary.price&quot; placeholder=&quot;只写大致规模、利润和时间，不假装只有唯一答案&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
@@ -1198,8 +1242,26 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;p class=&quot;pif-self-check&quot;&gt;&lt;strong&gt;最后四问：&lt;/strong&gt;遮住领域标题，我能否说出每部分想查什么？给我一条新闻，我能否指出它改变了哪个事实？我能否举出看似利好、其实不能证明结论的反例？我能否说出下一步查哪份资料，而不是只写“继续观察”？&lt;/p&gt;
       &lt;/section&gt;
 
+      &lt;section class=&quot;pif-section&quot; id=&quot;practice-reviews&quot; data-practice-section&gt;
+        &lt;p class=&quot;pif-eyebrow&quot;&gt;不要只保存最新答案&lt;/p&gt;
+        &lt;h2&gt;复查记录：哪条新事实，让我改了哪项判断？&lt;/h2&gt;
+        &lt;p class=&quot;pif-question&quot;&gt;同一事实只记录一次，再写它影响了哪些领域。只有完成一次明确复查时才保存，不为每次打字制造没有意义的版本。&lt;/p&gt;
+        &lt;div class=&quot;pif-form-grid pif-review-form&quot;&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-date&quot;&gt;复查日期&lt;/label&gt;&lt;input id=&quot;review-date&quot; type=&quot;date&quot; data-field=&quot;reviewDraft.date&quot; data-review-field=&quot;date&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-domains&quot;&gt;影响哪些领域 &lt;span class=&quot;pif-hint&quot;&gt;可以写多个&lt;/span&gt;&lt;/label&gt;&lt;input id=&quot;review-domains&quot; data-field=&quot;reviewDraft.domains&quot; data-review-field=&quot;domains&quot; placeholder=&quot;例如：成本、质量、进度、估值&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;review-fact&quot;&gt;新事实是什么&lt;/label&gt;&lt;textarea id=&quot;review-fact&quot; data-field=&quot;reviewDraft.fact&quot; data-review-field=&quot;fact&quot; placeholder=&quot;只写已经发生或可以核对的事实，不把解释混进来&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;label for=&quot;review-source&quot;&gt;原始来源在哪里&lt;/label&gt;&lt;input id=&quot;review-source&quot; data-field=&quot;reviewDraft.source&quot; data-review-field=&quot;source&quot; placeholder=&quot;文件名称、发布日期和具体位置；无法验证也要写明&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-old&quot;&gt;原判断&lt;/label&gt;&lt;textarea id=&quot;review-old&quot; data-field=&quot;reviewDraft.oldJudgment&quot; data-review-field=&quot;oldJudgment&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-new&quot;&gt;新判断&lt;/label&gt;&lt;textarea id=&quot;review-new&quot; data-field=&quot;reviewDraft.newJudgment&quot; data-review-field=&quot;newJudgment&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-reason&quot;&gt;为什么改变&lt;/label&gt;&lt;textarea id=&quot;review-reason&quot; data-field=&quot;reviewDraft.reason&quot; data-review-field=&quot;reason&quot; placeholder=&quot;说明新事实怎样连接到收入、成本、时间或风险&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field&quot;&gt;&lt;label for=&quot;review-next&quot;&gt;下一步&lt;/label&gt;&lt;textarea id=&quot;review-next&quot; data-field=&quot;reviewDraft.next&quot; data-review-field=&quot;next&quot; placeholder=&quot;下一份资料中的一个数字、状态或事件&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+          &lt;div class=&quot;pif-field pif-field-wide&quot;&gt;&lt;button class=&quot;pif-button pif-button-primary&quot; type=&quot;button&quot; data-add-review&gt;保存这次复查&lt;/button&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;pif-review-list&quot; data-review-list aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+      &lt;/section&gt;
+
       &lt;footer class=&quot;pif-footer&quot;&gt;
-        &lt;p&gt;&lt;strong&gt;本地保存说明：&lt;/strong&gt;自动保存只发生在当前浏览器的本地存储中，不会上传到网络。清理浏览器数据可能丢失记录，请定期使用“导出记录”保存备份文件。&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;本地保存说明：&lt;/strong&gt;填写内容和复查记录只保存在当前浏览器，不会上传到网络。清理浏览器数据可能丢失记录，请定期使用“导出记录”保存备份文件。&lt;/p&gt;
         &lt;p&gt;&lt;strong&gt;研究边界：&lt;/strong&gt;本练习册用于练习组织事实和修改判断，不提供个股推荐、目标价或收益承诺。&lt;/p&gt;
       &lt;/footer&gt;
     &lt;/div&gt;
@@ -1213,8 +1275,11 @@ html&gt;body{padding:0}&lt;/style&gt;
 
       var storageKey = &quot;pm-investment-practice:v1&quot;;
       var fields = Array.prototype.slice.call(root.querySelectorAll(&quot;[data-field]&quot;));
+      var reviewFields = Array.prototype.slice.call(root.querySelectorAll(&quot;[data-review-field]&quot;));
       var status = root.querySelector(&quot;[data-status]&quot;);
       var preview = root.querySelector(&quot;[data-summary-preview]&quot;);
+      var reviewList = root.querySelector(&quot;[data-review-list]&quot;);
+      var reviews = [];
       var saveTimer = null;
       var storageAvailable = true;
 
@@ -1238,18 +1303,20 @@ html&gt;body{padding:0}&lt;/style&gt;
       }
 
       function makeRecord() {
-        return { version: 1, updatedAt: new Date().toISOString(), values: valuesFromForm() };
+        return { version: 2, updatedAt: new Date().toISOString(), values: valuesFromForm(), reviews: reviews };
       }
 
       function save() {
         renderSummary();
-        if (!storageAvailable) return;
+        if (!storageAvailable) return false;
         try {
           localStorage.setItem(storageKey, JSON.stringify(makeRecord()));
           setStatus(&quot;已自动保存在本机 · &quot; + new Date().toLocaleTimeString([], { hour: &quot;2-digit&quot;, minute: &quot;2-digit&quot; }));
+          return true;
         } catch (error) {
           storageAvailable = false;
           setStatus(&quot;浏览器不允许本地保存，请用“导出记录”备份。 &quot;);
+          return false;
         }
       }
 
@@ -1273,7 +1340,9 @@ html&gt;body{padding:0}&lt;/style&gt;
           &quot;&quot;,
           &quot;仍在花钱的项目：\n&quot; + value(&quot;summary.spending&quot;),
           &quot;&quot;,
-          &quot;最不能判断错的三件事：\n&quot; + value(&quot;summary.critical&quot;),
+          &quot;候选关键问题：\n&quot; + value(&quot;summary.critical&quot;),
+          &quot;&quot;,
+          &quot;最先研究的 P0 及原因：\n&quot; + value(&quot;summary.p0&quot;),
           &quot;&quot;,
           &quot;已经知道：\n&quot; + value(&quot;summary.known&quot;),
           &quot;&quot;,
@@ -1288,6 +1357,20 @@ html&gt;body{padding:0}&lt;/style&gt;
           &quot;当前结论：&quot; + value(&quot;summary.action&quot;),
           &quot;下次复查：&quot; + value(&quot;summary.reviewDate&quot;)
         ];
+        if (reviews.length) {
+          var latest = reviews[0];
+          lines.push(
+            &quot;&quot;,
+            &quot;最近一次复查：&quot; + latest.date,
+            &quot;新事实：\n&quot; + latest.fact,
+            &quot;原始来源：\n&quot; + latest.source,
+            &quot;影响：&quot; + latest.domains,
+            &quot;原判断：\n&quot; + latest.oldJudgment,
+            &quot;新判断：\n&quot; + latest.newJudgment,
+            &quot;改变原因：\n&quot; + latest.reason,
+            &quot;下一步：\n&quot; + latest.next
+          );
+        }
         preview.textContent = lines.join(&quot;\n&quot;);
       }
 
@@ -1298,6 +1381,123 @@ html&gt;body{padding:0}&lt;/style&gt;
       function localDateStamp(date) {
         function twoDigits(number) { return String(number).padStart(2, &quot;0&quot;); }
         return date.getFullYear() + &quot;-&quot; + twoDigits(date.getMonth() + 1) + &quot;-&quot; + twoDigits(date.getDate());
+      }
+
+      function reviewValue(key) {
+        var field = root.querySelector(&#x27;[data-review-field=&quot;&#x27; + key + &#x27;&quot;]&#x27;);
+        return field ? field.value.trim() : &quot;&quot;;
+      }
+
+      function normaliseReviews(input) {
+        if (!Array.isArray(input)) return [];
+        return input.filter(function (entry) {
+          return entry &amp;&amp; typeof entry === &quot;object&quot; &amp;&amp; String(entry.fact || &quot;&quot;).trim();
+        }).map(function (entry, index) {
+          return {
+            id: String(entry.id || (&quot;imported-&quot; + index + &quot;-&quot; + String(entry.date || &quot;unknown&quot;))),
+            date: String(entry.date || &quot;日期不明&quot;),
+            fact: String(entry.fact || &quot;&quot;),
+            source: String(entry.source || &quot;未记录&quot;),
+            domains: String(entry.domains || &quot;未记录&quot;),
+            oldJudgment: String(entry.oldJudgment || &quot;未记录&quot;),
+            newJudgment: String(entry.newJudgment || &quot;未记录&quot;),
+            reason: String(entry.reason || &quot;未记录&quot;),
+            next: String(entry.next || &quot;未记录&quot;)
+          };
+        });
+      }
+
+      function clearReviewDraft() {
+        reviewFields.forEach(function (field) { field.value = &quot;&quot;; });
+        var dateField = root.querySelector(&#x27;[data-review-field=&quot;date&quot;]&#x27;);
+        if (dateField) dateField.value = localDateStamp(new Date());
+      }
+
+      function addReviewItem(container, label, content, wide) {
+        var item = document.createElement(&quot;div&quot;);
+        item.className = &quot;pif-review-item&quot; + (wide ? &quot; pif-review-item-wide&quot; : &quot;&quot;);
+        var heading = document.createElement(&quot;strong&quot;);
+        heading.textContent = label;
+        var text = document.createElement(&quot;span&quot;);
+        text.textContent = content;
+        item.appendChild(heading);
+        item.appendChild(text);
+        container.appendChild(item);
+      }
+
+      function renderReviewList() {
+        if (!reviewList) return;
+        reviewList.textContent = &quot;&quot;;
+        if (!reviews.length) {
+          var empty = document.createElement(&quot;div&quot;);
+          empty.className = &quot;pif-review-empty&quot;;
+          empty.textContent = &quot;还没有复查记录。新事实真正改变判断后，再保存第一条。&quot;;
+          reviewList.appendChild(empty);
+          return;
+        }
+        reviews.forEach(function (entry) {
+          var card = document.createElement(&quot;article&quot;);
+          card.className = &quot;pif-review-card&quot;;
+          var head = document.createElement(&quot;div&quot;);
+          head.className = &quot;pif-review-head&quot;;
+          var titleWrap = document.createElement(&quot;div&quot;);
+          var title = document.createElement(&quot;h3&quot;);
+          title.textContent = &quot;复查 · &quot; + entry.date;
+          var meta = document.createElement(&quot;p&quot;);
+          meta.textContent = &quot;影响：&quot; + entry.domains;
+          titleWrap.appendChild(title);
+          titleWrap.appendChild(meta);
+          var remove = document.createElement(&quot;button&quot;);
+          remove.type = &quot;button&quot;;
+          remove.className = &quot;pif-button pif-button-compact&quot;;
+          remove.setAttribute(&quot;data-review-remove&quot;, entry.id);
+          remove.textContent = &quot;删除这条&quot;;
+          head.appendChild(titleWrap);
+          head.appendChild(remove);
+          card.appendChild(head);
+          var grid = document.createElement(&quot;div&quot;);
+          grid.className = &quot;pif-review-grid&quot;;
+          addReviewItem(grid, &quot;新事实&quot;, entry.fact, true);
+          addReviewItem(grid, &quot;原始来源&quot;, entry.source, true);
+          addReviewItem(grid, &quot;原判断&quot;, entry.oldJudgment, false);
+          addReviewItem(grid, &quot;新判断&quot;, entry.newJudgment, false);
+          addReviewItem(grid, &quot;为什么改变&quot;, entry.reason, false);
+          addReviewItem(grid, &quot;下一步&quot;, entry.next, false);
+          card.appendChild(grid);
+          reviewList.appendChild(card);
+        });
+      }
+
+      function addReview() {
+        var draft = {
+          id: new Date().toISOString() + &quot;-&quot; + Math.random().toString(36).slice(2, 8),
+          date: reviewValue(&quot;date&quot;) || localDateStamp(new Date()),
+          fact: reviewValue(&quot;fact&quot;),
+          source: reviewValue(&quot;source&quot;),
+          domains: reviewValue(&quot;domains&quot;),
+          oldJudgment: reviewValue(&quot;oldJudgment&quot;),
+          newJudgment: reviewValue(&quot;newJudgment&quot;),
+          reason: reviewValue(&quot;reason&quot;),
+          next: reviewValue(&quot;next&quot;)
+        };
+        var required = [
+          [&quot;fact&quot;, &quot;新事实&quot;], [&quot;source&quot;, &quot;原始来源&quot;], [&quot;domains&quot;, &quot;受影响领域&quot;],
+          [&quot;oldJudgment&quot;, &quot;原判断&quot;], [&quot;newJudgment&quot;, &quot;新判断&quot;], [&quot;reason&quot;, &quot;改变原因&quot;], [&quot;next&quot;, &quot;下一步&quot;]
+        ];
+        for (var index = 0; index &lt; required.length; index += 1) {
+          var item = required[index];
+          if (!draft[item[0]]) {
+            var missing = root.querySelector(&#x27;[data-review-field=&quot;&#x27; + item[0] + &#x27;&quot;]&#x27;);
+            if (missing) missing.focus();
+            setStatus(&quot;复查记录还缺：“&quot; + item[1] + &quot;”。不知道时也要写明为什么无法确认。 &quot;);
+            return;
+          }
+        }
+        reviews.unshift(draft);
+        clearReviewDraft();
+        renderReviewList();
+        if (save()) setStatus(&quot;这次复查已保存；旧判断仍保留在记录中。 &quot;);
+        else setStatus(&quot;复查已加入当前页面，但浏览器不允许本地保存；请立即导出记录。 &quot;);
       }
 
       function exportRecord() {
@@ -1320,10 +1520,12 @@ html&gt;body{padding:0}&lt;/style&gt;
         reader.onload = function () {
           try {
             var record = JSON.parse(String(reader.result));
-            if (!record || record.version !== 1 || !record.values || typeof record.values !== &quot;object&quot;) throw new Error(&quot;格式不受支持&quot;);
+            if (!record || (record.version !== 1 &amp;&amp; record.version !== 2) || !record.values || typeof record.values !== &quot;object&quot;) throw new Error(&quot;格式不受支持&quot;);
+            reviews = normaliseReviews(record.reviews);
             applyValues(record.values);
-            save();
-            setStatus(&quot;记录已导入并保存在本机。 &quot;);
+            renderReviewList();
+            if (save()) setStatus(&quot;记录已导入并保存在本机。 &quot;);
+            else setStatus(&quot;记录已导入当前页面，但浏览器不允许本地保存；请重新导出备份。 &quot;);
           } catch (error) {
             setStatus(&quot;导入失败：请选择由本练习册导出的数据备份文件。 &quot;);
           }
@@ -1357,7 +1559,9 @@ html&gt;body{padding:0}&lt;/style&gt;
         var raw = localStorage.getItem(storageKey);
         if (raw) {
           var stored = JSON.parse(raw);
-          if (stored &amp;&amp; stored.version === 1) applyValues(stored.values);
+          if (!stored || (stored.version !== 1 &amp;&amp; stored.version !== 2) || !stored.values || typeof stored.values !== &quot;object&quot;) throw new Error(&quot;格式不受支持&quot;);
+          reviews = normaliseReviews(stored.reviews);
+          applyValues(stored.values);
           setStatus(&quot;已读取本机上次记录。 &quot;);
         } else {
           renderSummary();
@@ -1368,6 +1572,11 @@ html&gt;body{padding:0}&lt;/style&gt;
         renderSummary();
         setStatus(&quot;浏览器不允许读取本地记录，请用导入 / 导出备份。 &quot;);
       }
+
+      var initialReviewDate = root.querySelector(&#x27;[data-review-field=&quot;date&quot;]&#x27;);
+      if (initialReviewDate &amp;&amp; !initialReviewDate.value) initialReviewDate.value = localDateStamp(new Date());
+      renderReviewList();
+      renderSummary();
 
       fields.forEach(function (field) {
         field.addEventListener(&quot;input&quot;, scheduleSave);
@@ -1382,13 +1591,29 @@ html&gt;body{padding:0}&lt;/style&gt;
       if (importFile) importFile.addEventListener(&quot;change&quot;, function () { importRecord(importFile.files &amp;&amp; importFile.files[0]); importFile.value = &quot;&quot;; });
       var copyButton = root.querySelector(&quot;[data-copy-summary]&quot;);
       if (copyButton) copyButton.addEventListener(&quot;click&quot;, copySummary);
+      var addReviewButton = root.querySelector(&quot;[data-add-review]&quot;);
+      if (addReviewButton) addReviewButton.addEventListener(&quot;click&quot;, addReview);
+      if (reviewList) reviewList.addEventListener(&quot;click&quot;, function (event) {
+        var button = event.target.closest &amp;&amp; event.target.closest(&quot;[data-review-remove]&quot;);
+        if (!button) return;
+        var reviewId = button.getAttribute(&quot;data-review-remove&quot;);
+        if (!window.confirm(&quot;确定删除这条复查记录吗？删除后只能从之前导出的备份恢复。&quot;)) return;
+        reviews = reviews.filter(function (entry) { return entry.id !== reviewId; });
+        renderReviewList();
+        if (save()) setStatus(&quot;这条复查记录已删除。 &quot;);
+        else setStatus(&quot;记录已从当前页面删除，但浏览器没有保存变化；请重新导出备份。 &quot;);
+      });
       var resetButton = root.querySelector(&quot;[data-reset]&quot;);
       if (resetButton) resetButton.addEventListener(&quot;click&quot;, function () {
         if (!window.confirm(&quot;确定清空这台浏览器里的全部练习记录吗？请先导出需要保留的内容。&quot;)) return;
         fields.forEach(function (field) { field.value = &quot;&quot;; });
-        try { localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; }
+        reviews = [];
+        clearReviewDraft();
+        try { localStorage.removeItem(storageKey); storageAvailable = true; }
+        catch (error) { storageAvailable = false; }
+        renderReviewList();
         renderSummary();
-        setStatus(&quot;本机练习记录已清空。 &quot;);
+        setStatus(storageAvailable ? &quot;本机练习记录已清空。 &quot; : &quot;页面已清空，但浏览器不允许修改本地记录。 &quot;);
       });
 
       var links = Array.prototype.slice.call(root.querySelectorAll(&quot;a[href^=&#x27;#&#x27;]&quot;));
